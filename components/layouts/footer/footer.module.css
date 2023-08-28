@@ -1,0 +1,15 @@
+.footer_container {}
+
+.footer_form {
+    display: flex;
+
+}
+
+.footer_form_input {
+    background-color: transparent;
+}
+
+.footer_form_underscore {
+    background-color: aliceblue;
+    height: 1px;
+}

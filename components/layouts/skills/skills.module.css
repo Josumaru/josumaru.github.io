@@ -1,0 +1,20 @@
+.skills_container {
+    background-color: var(--secondary-background);
+}
+
+.skills_subsection {
+    background-color: var(--main-background);
+}
+
+@media (max-width:600px) {
+    .skills_section {
+     flex-direction: column;
+     /* overflow-y: scroll; */
+    }
+    /* .skills_section::-webkit-scrollbar {
+        display: none;
+    } */
+    .skills_subsection {
+        width: 100%;
+    }
+}
