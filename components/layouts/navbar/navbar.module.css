@@ -1,0 +1,29 @@
+.navbar_section {
+    padding-inline: 200px;
+    transition: .5s ease-in-out;
+}
+
+
+@media (max-width: 1000px) {
+    .navbar_section {
+        padding-inline: 100px;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar_section {
+        padding-inline: 1rem;
+    }
+
+    .show {
+        max-height: 200px;
+        transition: max-height 0.5s ease-in-out;
+
+    }
+
+    .hide {
+        max-height: 0px;
+        transition: max-height 0.5s ease-in-out;
+
+    }
+}

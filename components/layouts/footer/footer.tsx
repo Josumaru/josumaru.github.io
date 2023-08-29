@@ -8,26 +8,32 @@ import { TbBrandDiscord } from "react-icons/tb"
 import { AiOutlineReddit } from "react-icons/ai"
 import Image from "next/image";
 import logo from "@/assets/images/logo.png"
-
+import LottieOrbit from "@/assets/lottie/LottieOrbit.json"
 const Footer = () => {
     return (
         <div className={`${styles.footer_container} w-full flex flex-col relative overflow-hidden p-4 inset-0 z-0`}>
             <Lottie className={`absolute`} animationData={LottiePlanet} autoPlay={true} loop={true}></Lottie>
             <div className={`${styles.footer_left} w-full h-full flex flex-row`}>
-                <div className={`${styles.footer_left_text} w-1/2`} data-aos={"fade-up"}>
+                <div className={`${styles.footer_left_section} w-1/2`} data-aos={"fade-up"}>
                     <p className={`${styles.footer_left_text} font-medium`}>Looking for <span className={`text-emerald-500`}>Jobs</span></p>
                     <h1 className={`${styles.footer_left_text} font-extrabold`}>Send Me Mail.</h1>
                     <form className={`${styles.footer_form}`}>
                         <input className={`${styles.footer_form_input} w-full ro p-2 focus-within:outline-none`} placeholder="Your Email"></input>
-                        <button className="text-violet-400 text-3xl"><BiSolidSend></BiSolidSend></button>
+                        <button className={`${styles.footer_form_button} text-3xl`}><BiSolidSend></BiSolidSend></button>
                     </form>
                     <div className={`${styles.footer_form_underscore} w-full bg-white`}></div>
                 </div>
+                <div className={`w-1/2`} data-aos={"fade-up"}>
+                    <Lottie className={`w-2/4 absolute`} animationData={LottieOrbit} loop={true} ></Lottie>
+                </div>
             </div>
-            <div className={`${styles.footer_left} w-full h-full flex flex-row`} data-aos={"fade-up"}>
+            <div className={`${styles.footer_right} w-full h-full flex flex-row`} data-aos={"fade-up"}>
                 <div className={`w-1/2 flex py-24`}>
-                    <div>
-                        <Image className={`w-8 h-8`} src={logo} alt={"Logo"}></Image>
+                    <div className={`w-11/12`}>
+                        <div className={`flex py-2`}>
+                            <Image className={`w-8 h-8`} src={logo} alt={"Logo"}></Image>
+                            <p className={`font-semibold px-2 text-2xl`}>Josu</p>
+                        </div>
                         <p>Dont forget to bring your own Coffe, Dont forget to bring your own Coffe, Dont forget to bring your own Coffe</p>
                     </div>
                     <div className={`px-5 text-gray-500`}>
