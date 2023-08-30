@@ -23,20 +23,20 @@ const Footer = () => {
                     </form>
                     <div className={`${styles.footer_form_underscore} w-full bg-white`}></div>
                 </div>
-                <div className={`w-1/2`} data-aos={"fade-up"}>
+                {/* <div className={`w-1/2`} data-aos={"fade-up"}>
                     <Lottie className={`w-2/4 absolute`} animationData={LottieOrbit} loop={true} ></Lottie>
-                </div>
+                </div> */}
             </div>
             <div className={`${styles.footer_right} w-full h-full flex flex-row`} data-aos={"fade-up"}>
-                <div className={`w-1/2 flex py-24`}>
+                <div className={`w-1/2 flex py-24 flex-col md:flex-row`}>
                     <div className={`w-11/12`}>
                         <div className={`flex py-2`}>
                             <Image className={`w-8 h-8`} src={logo} alt={"Logo"}></Image>
                             <p className={`font-semibold px-2 text-2xl`}>Josu</p>
                         </div>
-                        <p>Dont forget to bring your own Coffe, Dont forget to bring your own Coffe, Dont forget to bring your own Coffe</p>
+                        <p>An application programming interface is a way for two or more computer programs to communicate with each other. It is a type of software interface, offering a service to other pieces of software.</p>
                     </div>
-                    <div className={`px-5 text-gray-500`}>
+                    <div className={`flex md:flex-col justify-between md:px-5 text-gray-500`}>
                         <ul className={`hover:text-emerald-500 cursor-pointer`}>
                             <li>
                                 Home
@@ -61,25 +61,25 @@ const Footer = () => {
 
                 </div>
                 <div className={`py-24 w-1/2 flex text-gray-500`}>
-                    <div className={`px-5 w-1/2`}>
+                    <div className={`w-1/2`}>
                         <ul className={`hover:text-emerald-500 cursor-pointer`}>
                             <li>
-                                Home
+                                Slain
                             </li>
                         </ul>
                         <ul className={`hover:text-emerald-500 cursor-pointer`}>
                             <li>
-                                Home
+                                Double Kill
                             </li>
                         </ul>
                         <ul className={`hover:text-emerald-500 cursor-pointer`}>
                             <li>
-                                Home
+                                Triple Kill
                             </li>
                         </ul>
                         <ul className={`hover:text-emerald-500 cursor-pointer`}>
                             <li>
-                                Home
+                                Maniac
                             </li>
                         </ul>
                     </div>

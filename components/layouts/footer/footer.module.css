@@ -17,19 +17,38 @@
 .footer_form_button {
     color: var(--main-color);
 }
+
 .footer_form_button:hover {
     color: var(--second-color);
 }
 
-@media (max-width:600px) {
+
+@media (max-width:1000px) {
+    .footer_right {
+        
+    }
+
+    .footer_right div {
+        padding-top: 10px;
+        width: 100%;
+    }
+
+    .footer_left_section {
+        width: 100%;
+    }
+}
+
+@media (max-width:768px) {
     .footer_right {
         flex-direction: column;
         width: 100%;
     }
-    .footer_right div{
+
+    .footer_right div {
         padding-top: 10px;
         width: 100%;
     }
+
     .footer_left_section {
 
         width: 100%;
