@@ -1,9 +1,26 @@
 .skills_container {
     background-color: var(--secondary-background);
+    padding-inline: 200px;
 }
 
 .skills_subsection {
     background-color: var(--main-background);
+    width: 500px;
+}
+
+
+
+
+@media (max-width: 1000px) {
+    .skills_container {
+        padding-inline: 100px;
+    }
+}
+
+@media (max-width: 768px) {
+    .skills_container {
+        padding-inline: 1rem;
+    }
 }
 
 @media (max-width:600px) {

@@ -1,4 +1,6 @@
-.footer_container {}
+.footer_container {
+    padding-inline: 200px;
+}
 
 .footer_form {
     display: flex;
@@ -24,7 +26,8 @@
 
 
 @media (max-width:1000px) {
-    .footer_right {
+    .footer_container {
+        padding-inline: 100px;
         
     }
 
@@ -37,8 +40,10 @@
         width: 100%;
     }
 }
-
-@media (max-width:768px) {
+@media (max-width: 768px) {
+    .footer_container {
+        padding-inline: 1rem;
+    }
     .footer_right {
         flex-direction: column;
         width: 100%;

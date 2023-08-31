@@ -1,12 +1,13 @@
 import styles from "./header.module.css"
 import Image from "next/image";
 import person from "@/assets/images/person.jpg"
+import Three from "@/components/elements/three/three";
+import ParticlesContainer from "@/components/elements/particles/particles";
 
 const Header = () => {
     return (
         <div className={`${styles.header_container} w-full h-screen flex overflow-hidden`}>
-
-
+            <ParticlesContainer />
             <div className={`${styles.header_left} w-1/2 h-full flex flex-col justify-center`} data-aos="fade-right">
                 <div>
                     <span className={`font-semibold text-gray-500 hover:text-gray-100 ease-in-out duration-500 cursor-default`}>Hello, </span>
@@ -24,7 +25,8 @@ const Header = () => {
                 </div>
             </div>
             <div className={`${styles.header_right} w-1/2 flex items-center justify-center`} data-aos="fade-left">
-                <Image className={`${styles.header_person} w-80 h-80 bg-blend-exclusion`} src={person} alt={"person"}></Image>
+                <Three />
+                {/* <Image className={`${styles.header_person} w-80 h-80`} src={person} alt={"person"}></Image> */}
             </div>
         </div>
     )
