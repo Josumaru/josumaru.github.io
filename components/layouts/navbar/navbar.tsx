@@ -10,14 +10,14 @@ const Navbar = () => {
         console.log(isShow)
     }, [isShow])
     return (
-        <nav className={`${styles.navbar_container} max-w-screen-2xl h-full w-full`}>
+        <nav className={`${styles.navbar_container} max-w-screen-2xl h-full w-full`} data-aos={`fade-down`}>
             <div className={`${styles.navbar_section} max-w-screen-2xl flex flex-wrap items-center justify-between mx-auto p-4`}>
-                <a className={`${styles.navbar_logo} flex items-center`} href="https://github.com/Josumaru">
+                <a className={`${styles.navbar_logo} flex items-center`} href="https://github.com/Josumaru" data-aos={`fade-right`}>
                     <Image className={`${styles.navbar_images} h-8 w-8 mr-3`} src={logo} alt={"Logo"}></Image>
                     <span className={`${styles.navbar_brand} self-center text-xl font-semibold`}>Josumaru</span>
                 </a>
 
-                <div className={`${styles.navbar_button} flex md:order-2`}>
+                <div className={`${styles.navbar_button} flex md:order-2`} data-aos={`fade-left`}>
                     <a className={`${styles.navbar_button} bg-emerald-500 py-1 px-2 rounded-full border border-transparent hover:border-emerald-500 hover:bg-transparent hidden md:flex hover:text-emerald-500 text-md font-medium`} href={"mailto:jokosupriyanto@gmail.com"}>Contact Me</a>
                     <button onClick={() => setIsShow(!isShow)} className={`${styles.navbar_button} bg-emerald-500 py-1 w-14 flex items-center justify-center px-2 rounded-full border border-transparent hover:border-emerald-500 hover:bg-transparent md:hidden hover:text-emerald-500 text-md font-medium`}><BsCodeSlash></BsCodeSlash></button>
                 </div>

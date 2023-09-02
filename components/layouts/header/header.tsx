@@ -1,7 +1,7 @@
 import styles from "./header.module.css"
 import Image from "next/image";
 import person from "@/assets/images/person.jpg"
-import Three from "@/components/elements/three/three";
+import Spline from "@/components/elements/spline/spline";
 import ParticlesContainer from "@/components/elements/particles/particles";
 
 const Header = () => {
@@ -25,7 +25,7 @@ const Header = () => {
                 </div>
             </div>
             <div className={`${styles.header_right} w-1/2 flex items-center justify-center`} data-aos="fade-left">
-                <Three />
+                <Spline />
                 {/* <Image className={`${styles.header_person} w-80 h-80`} src={person} alt={"person"}></Image> */}
             </div>
         </div>
