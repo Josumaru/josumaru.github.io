@@ -7,7 +7,6 @@ const Spline = () => {
 
     useEffect(() => {
         if (typeof window !== "undefined") {
-            console.log("a")
             const canvas = canvasRef.current!;
             const app = new Application(canvas)
             app.load("https://prod.spline.design/OB5hnGXvRaB05-mB/scene.splinecode");

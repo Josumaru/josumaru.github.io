@@ -6,7 +6,7 @@ import ParticlesContainer from "@/components/elements/particles/particles";
 
 const Header = () => {
     return (
-        <div className={`${styles.header_container} w-full h-screen flex overflow-hidden`}>
+        <div className={`${styles.header_container} w-full h-screen flex overflow-hidden`} id={"home"}>
             <ParticlesContainer />
             <div className={`${styles.header_left} w-1/2 h-full flex flex-col justify-center`} data-aos="fade-right">
                 <div>
@@ -15,7 +15,7 @@ const Header = () => {
                 </div>
                 <p className={`${styles.header_name} py-1 font-bold text-emerald-500`}>Joko Supriyanto</p>
                 <p className={`py-1 font-semibold text-gray-500`} >Programer</p>
-                <p className={`py-1 font-medium`}>Currenty im studing in Muhammadiyah Surakarta University and looking for jobs with computer science or machine learning</p>
+                <p className={`py-1 font-medium`}>I am currently studying at the Muhammadiyah University of Surakarta and am looking for a job in computer science or machine learning and also Web development.</p>
                 <button className={`py-1 bg-emerald-500 w-36 p-1 rounded-md my-2 shadow shadow-emerald-500`}>Send Me Email</button>
                 <div className={`py-1`}>
                     <p>Find me on</p>

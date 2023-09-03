@@ -8,9 +8,6 @@
     width: 500px;
 }
 
-
-
-
 @media (max-width: 1000px) {
     .skills_container {
         padding-inline: 100px;
@@ -25,9 +22,10 @@
 
 @media (max-width:600px) {
     .skills_section {
-     flex-direction: column;
-     /* overflow-y: scroll; */
+        flex-direction: column;
+        /* overflow-y: scroll; */
     }
+
     /* .skills_section::-webkit-scrollbar {
         display: none;
     } */

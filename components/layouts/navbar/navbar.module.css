@@ -3,6 +3,17 @@
     transition: .5s ease-in-out;
 }
 
+.sidebar{
+    backdrop-filter: blur(3px);
+    background-color: rgba(128, 128, 128, 0.552);
+}
+
+.active {
+    color: var(--main-color);
+}
+.nonactive {
+    color: whitesmoke;
+}
 
 @media (max-width: 1000px) {
     .navbar_section {
