@@ -16,7 +16,7 @@ const Header = () => {
                 <p className={`${styles.header_name} py-1 font-bold text-emerald-500`}>Joko Supriyanto</p>
                 <p className={`py-1 font-semibold text-gray-500`} >Programer</p>
                 <p className={`py-1 font-medium`}>I am currently studying at the Muhammadiyah University of Surakarta and am looking for a job in computer science or machine learning and also Web development.</p>
-                <button className={`py-1 bg-emerald-500 w-36 p-1 rounded-md my-2 shadow shadow-emerald-500`}>Send Me Email</button>
+                <button className={`py-1 border border-emerald-500 hover:border-emerald-300 hover:text-emerald-200 text-emerald-500 ease-in-out duration-200 w-36 p-1 rounded-md my-2 shadow-2xl hover:bg-emerald-500 hover:bg-opacity-25 shadow-emerald-500`}>Say Hello</button>
                 <div className={`py-1`}>
                     <p>Find me on</p>
                     <div>

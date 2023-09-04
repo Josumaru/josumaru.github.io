@@ -2,10 +2,10 @@
 import { useEffect } from 'react'
 import './globals.css'
 import type { Metadata } from 'next'
-import { Inter, Open_Sans, Roboto } from 'next/font/google'
+import { Inter, Open_Sans, Roboto, Montserrat } from 'next/font/google'
 import AOS from "aos"
 import "aos/dist/aos.css"
-const inter = Inter({ subsets: ['latin'] })
+const inter = Montserrat({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'Joko Supriyanto',

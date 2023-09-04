@@ -6,7 +6,7 @@ import { HiOutlineServerStack } from "react-icons/hi2"
 const Skills = () => {
     return (
         <div id={"skills"} className={`${styles.skills_container} w-full h-screen p-4`}>
-            <div className={`text-2xl font-semibold`}>
+            <div className={`font-semibold`}>
                 <span>Techical </span>
                 <span className={`text-emerald-500`}>Skill</span>
             </div>
@@ -23,7 +23,7 @@ const Skills = () => {
                         <PiGearSixLight />
                     </div>
                     <p className={`font-semibold py-4`}>Framework</p>
-                    <p className={`text-gray-500`}>My favorite framework is React but I can also use other frameworks like Vue, NEXT or Electron.</p>
+                    <p className={`text-gray-500 py-5`}>My favorite framework is React but I can also use other frameworks like Vue, NEXT or Electron.</p>
                 </div>
                 <div className={`${styles.skills_subsection}  p-5 my-4 rounded-md h-5/6 flex items-center flex-col`} data-aos="fade-up-left">
                     <div className={`text-emerald-500 text-9xl py-4`}>

@@ -1,3 +1,4 @@
 .about_container {
+    padding-inline: 200px;
     background-color: var(--secondary-background);
 }
