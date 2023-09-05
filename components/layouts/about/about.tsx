@@ -9,7 +9,7 @@ const About = () => {
             <div className={`py-4 font-bold`} data-aos={"fade-right"}>
                 <p>About <span className={`text-emerald-500`}>Me</span></p>
             </div>
-            <div className={`flex`}>
+            <div className={`${styles.about_section} flex`}>
                 <div className={``} data-aos={"fade-right"}>
                     <p className={`py-1 text-gray-400`}>Hello, my name is Joko Supriyanto, I like learning a lot about technology, especially Web Development, AI and machine learning, I want to create a product that can change the world</p>
                     <p className={`py-1 text-gray-400`} >I also learned about Cyber Security, Cryptography and how networks work</p>
@@ -46,12 +46,12 @@ const About = () => {
                         </div>
                     </div>
                 </div>
-                <div className={`w-1/2 h-full relative group`} data-aos={"fade-left"}>
+                <div className={`${styles.person_container} w-1/2 h-full relative group`} data-aos={"fade-left"}>
                     <div className={`w-80 h-80 absolute z-20 group-hover:h-72`}>
                         <Image className={`rounded-md`} src={person} alt="Person" />
                     </div>
                     <div className={`absolute rounded-md ease-in-out duration-500 z-30 bg-emerald-800 opacity-10 group-hover:bg-transparent h-80 w-80`}></div>
-                    <div className={`w-80 h-80 rounded-md bg-transparent border-2 translate-x-5 translate-y-5 group-hover:translate-x-3 group-hover:translate-y-3 group-hover:text-emerald-300 ease-in-out duration-500 border-emerald-500 `}></div>
+                    <div className={`${styles.person_border} w-80 h-80 rounded-md bg-transparent border-2 translate-x-5 translate-y-5 group-hover:translate-x-3 group-hover:translate-y-3 group-hover:text-emerald-300 ease-in-out duration-500 border-emerald-500 `}></div>
                 </div>
             </div>
         </div>

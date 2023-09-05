@@ -8,8 +8,19 @@ import { TbBrandDiscord } from "react-icons/tb"
 import { AiOutlineReddit } from "react-icons/ai"
 import Image from "next/image";
 import logo from "@/assets/images/logo.png"
-import LottieOrbit from "@/assets/lottie/LottieOrbit.json"
+import Link from "next/link";
+
 const Footer = () => {
+
+    const handleScroll = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
+        e.preventDefault();
+        const href = e.currentTarget.href;
+        const target = href.replace(/.*\#/, "");
+        const element = document.getElementById(target)!
+        element.scrollIntoView({
+            behavior: "smooth"
+        })
+    }
     return (
         <div className={`${styles.footer_container} w-full flex flex-col relative overflow-hidden p-4 inset-0 z-0`}>
             <Lottie className={`absolute`} animationData={LottiePlanet} autoPlay={true} loop={true}></Lottie>
@@ -23,12 +34,9 @@ const Footer = () => {
                     </form>
                     <div className={`${styles.footer_form_underscore} w-full bg-white`}></div>
                 </div>
-                {/* <div className={`w-1/2`} data-aos={"fade-up"}>
-                    <Lottie className={`w-2/4 absolute`} animationData={LottieOrbit} loop={true} ></Lottie>
-                </div> */}
             </div>
             <div className={`${styles.footer_right} w-full h-full flex flex-row`} data-aos={"fade-up"}>
-                <div className={`w-1/2 flex py-24 flex-col md:flex-row`}>
+                <div className={`w-full flex py-24 flex-col md:flex-row`}>
                     <div className={`w-11/12`}>
                         <div className={`flex py-2`}>
                             <Image className={`w-8 h-8`} src={logo} alt={"Logo"}></Image>
@@ -36,51 +44,22 @@ const Footer = () => {
                         </div>
                         <p>An application programming interface is a way for two or more computer programs to communicate with each other. It is a type of software interface, offering a service to other pieces of software.</p>
                     </div>
-                    <div className={`flex md:flex-col justify-between md:px-5 text-gray-500`}>
-                        <ul className={`hover:text-emerald-500 cursor-pointer`}>
-                            <li>
-                                Home
-                            </li>
-                        </ul>
-                        <ul className={`hover:text-emerald-500 cursor-pointer`}>
-                            <li>
-                                Skill
-                            </li>
-                        </ul>
-                        <ul className={`hover:text-emerald-500 cursor-pointer`}>
-                            <li>
-                                Project
-                            </li>
-                        </ul>
-                        <ul className={`hover:text-emerald-500 cursor-pointer`}>
-                            <li>
-                                About Me
-                            </li>
-                        </ul>
-                    </div>
-
                 </div>
                 <div className={`py-24 w-1/2 flex text-gray-500`}>
-                    <div className={`w-1/2`}>
-                        <ul className={`hover:text-emerald-500 cursor-pointer`}>
-                            <li>
-                                Slain
-                            </li>
-                        </ul>
-                        <ul className={`hover:text-emerald-500 cursor-pointer`}>
-                            <li>
-                                Double Kill
-                            </li>
-                        </ul>
-                        <ul className={`hover:text-emerald-500 cursor-pointer`}>
-                            <li>
-                                Triple Kill
-                            </li>
-                        </ul>
-                        <ul className={`hover:text-emerald-500 cursor-pointer`}>
-                            <li>
-                                Maniac
-                            </li>
+                    <div className={`w-1/2 px-4`}>
+                        <ul>
+                            <Link href={"#home"} onClick={handleScroll}>
+                                <li className={`hover:text-emerald-500 cursor-pointer`}>Home</li>
+                            </Link>
+                            <Link href={"#skills"} onClick={handleScroll}>
+                                <li className={`hover:text-emerald-500 cursor-pointer`}>Skill</li>
+                            </Link>
+                            <Link href={"#project"} onClick={handleScroll}>
+                                <li className={`hover:text-emerald-500 cursor-pointer`}>Project</li>
+                            </Link>
+                            <Link href={"#about"} onClick={handleScroll}>
+                                <li className={`hover:text-emerald-500 cursor-pointer`}>About Me</li>
+                            </Link>
                         </ul>
                     </div>
                     <div className={`px-5 w-1/2`}>

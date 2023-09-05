@@ -10,15 +10,8 @@ import person from "@/assets/images/person.jpg"
 import Image from "next/image"
 
 const Project = () => {
-    const pagination = {
-        clickable: true,
-        renderBullet: function(classname) {
-            return "<div className={`" + classname + " bg-red-500 h-2 w-2`}></div>"
-        }
-    }
-    
     return (
-        <div className={`${styles.project_container} w-240 h-screen`} id={"project"}>
+        <div className={`${styles.project_container} w-240 h-screen`} id={"project"} data-aos={"fade-up"}>
             <div className={`text-md font-semibold py-4`}>
                 <p>Recent <span className={`text-emerald-500`}>Project</span></p>
             </div>
@@ -28,21 +21,20 @@ const Project = () => {
                 grabCursor={true}
                 loop={true}
                 centeredSlides={true}
-                slidesPerView={3}
+                slidesPerView={"auto"}
                 spaceBetween={10}
                 coverflowEffect={{ rotate: 0, stretch: 0, depth: 100, modifier: 3.5, slideShadows: true }}
-                // pagination={{
-                //     el: ".swiper_pagination",
-                //     clickable: true
-                // }}
-                pagination={pagination}
+                pagination={{
+                    el: ".swiper_pagination",
+                    clickable: true
+                }}
                 navigation={{
                     nextEl: ".swiper_next",
                     prevEl: ".swiper_previous",
                 }}
-                // style={{
-                //     '--swiper-pagination-color': '#fff',
-                // }}
+                style={{
+                    '--swiper-pagination-color': '#03BD94',
+                }}
             >
                 <SwiperSlide>
                     <Image src={person} alt={"Recent Project"} />
@@ -63,19 +55,19 @@ const Project = () => {
                     <Image src={person} alt={"Recent Project"} />
                 </SwiperSlide>
 
-                <div className={`${styles.swiper_controller} items-center justify-center flex-col`}>
-                    <div className={`flex`}>
-                        <div className={`swiper_previous`}>
-                            <button>Prev</button>
-                        </div>
-                        <div className={`swiper_next`}>
-                            <button>Next</button>
-                        </div>
-                    </div>
-                    <div className={`swiper_pagination`}>
+                <div className={`${styles.swiper_controller} flex items-center justify-center flex-col`}>
+                    <div className={`swiper_pagination text-center py-4`}>
                         <div className={`swipper_bullet bg-gray-400 w-2 h-2 rounded-full`}></div>
                         <div className={`swipper_dynamic bg-gray-400 w-2 h-2 rounded-full`}></div>
                         <div className={`swipper_active bg-emerald-500 w-2 h-2 rounded-full`}></div>
+                    </div>
+                    <div className={`flex`}>
+                        <div className={`${styles.swiper_previous} font-semibold flex justify-center items-center m-4 swiper_previous w-24 h-14`}>
+                            <button>Prev</button>
+                        </div>
+                        <div className={`${styles.swiper_next} font-semibold flex justify-center items-center m-4 swiper_next w-24 h-14`}>
+                            <button>Next</button>
+                        </div>
                     </div>
                 </div>
             </Swiper>

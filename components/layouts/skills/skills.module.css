@@ -21,14 +21,14 @@
 }
 
 @media (max-width:600px) {
-    .skills_section {
-        flex-direction: column;
-        /* overflow-y: scroll; */
+    .skills_container {
+        height: auto;
     }
 
-    /* .skills_section::-webkit-scrollbar {
-        display: none;
-    } */
+    .skills_section {
+        flex-direction: column;
+    }
+
     .skills_subsection {
         width: 100%;
     }

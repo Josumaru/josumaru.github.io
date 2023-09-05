@@ -5,7 +5,7 @@ import logo from "@/assets/images/logo.png"
 import { useState, useRef, useEffect } from "react";
 import Link from "next/link";
 import { BsCodeSlash } from "react-icons/bs"
-import { ImHome, ImPower } from "react-icons/im"
+import { ImHome } from "react-icons/im"
 import { IoMdGitNetwork } from "react-icons/io"
 import { BsPersonLinesFill, BsLightningCharge } from "react-icons/bs"
 
@@ -28,11 +28,6 @@ const Navbar = () => {
             behavior: "smooth"
         })
         setIsActive(target);
-        // const links = document.querySelectorAll(".nav-link")!
-        // links.forEach((link) => {
-        //     link.classList.remove("active")
-        // })
-        // e.currentTarget.classList.add("active")
         if (isShow) setIsShow(!isShow)
         if (target != "home") {
             setIsSideBar(true);
@@ -47,7 +42,7 @@ const Navbar = () => {
         })
     }, [])
     return (
-        <nav className={`${styles.navbar_container} ${isSideBar ? "h-screen fixed" : "h-auto top-0 absolute"} z-20 max-[768px]:bottom-0 max-w-screen-2xl w-full`} data-aos={`fade-down`}>
+        <nav className={`${styles.navbar_container} ${isSideBar ? "fixed" : " top-0"} z-20 max-[768px]:bottom-0 max-w-screen-2xl w-full`}>
             <div className={`${styles.navbar_section} ${isSideBar ? "hidden" : "flex"} max-w-screen-2xl flex-wrap items-center justify-between mx-auto p-4 `}>
                 <a className={`${styles.navbar_logo} flex items-center`} href="https://github.com/Josumaru" data-aos={`fade-right`}>
                     <Image className={`${styles.navbar_images} h-8 w-8 mr-3`} src={logo} alt={"Logo"}></Image>
@@ -60,7 +55,7 @@ const Navbar = () => {
                 </div>
 
                 <div className={`${styles.navbar_unorder} ${isShow ? styles.show : styles.hide} bg-gray-700 md:bg-transparent overflow-hidden rounded-md my-4 w-full md:flex md:order-1 md:w-auto items-center justify-between`} id="navbar-sticky">
-                    <ul className={`flex flex-col md:flex-row`}>
+                    <ul className={`flex flex-col md:flex-row`} data-aos={"fade-down"}>
                         <Link href={"#home"} onClick={handleScroll}>
                             <li className={`${styles.navbar_list} font-medium cursor-pointer block py-2 pl-3 pr-4 text-white md:bg-transparent hover:text-emerald-500 md:text-emerald-500 `} aria-current="page">Home</li>
                         </Link>
