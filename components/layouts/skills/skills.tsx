@@ -1,4 +1,3 @@
-import SkillCard from "@/components/elements/skillCard/skillCard";
 import styles from "./skills.module.css"
 import { PiCodesandboxLogoThin, PiGearSixLight } from "react-icons/pi"
 import { HiOutlineServerStack } from "react-icons/hi2"
