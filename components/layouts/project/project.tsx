@@ -32,9 +32,9 @@ const Project = () => {
                     nextEl: ".swiper_next",
                     prevEl: ".swiper_previous",
                 }}
-                style={{
+{/*                 style={{
                     '--swiper-pagination-color': '#03BD94',
-                }}
+                }} */}
             >
                 <SwiperSlide>
                     <Image src={person} alt={"Recent Project"} />
