@@ -63,8 +63,8 @@ const Footer = () => {
                         </ul>
                     </div>
                     <div className={`px-5 w-1/2`}>
-                        <p>Let's <span className={`text-emerald-500`}>Chat</span></p>
-                        <p className={`text-gray-500 cursor-pointer hover:text-emerald-500`}>jokosupriyanto1712@gmail.com</p>
+                        <p>Let&apos;s <span className={`text-emerald-500`}>Chat</span></p>
+                        <p className={`text-gray-500 cursor-pointer hover:text-emerald-500`}>l200220240@student.ums.ac.id</p>
                         <div className={`flex justify-between text-2xl container text-gray-500 py-3`}>
                             <FiGithub className={`hover:text-emerald-500 cursor-pointer`} ></FiGithub>
                             <FiInstagram className={`hover:text-emerald-500 cursor-pointer`}></FiInstagram>
