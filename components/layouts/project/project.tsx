@@ -23,7 +23,7 @@ const Project = () => {
                 centeredSlides={true}
                 slidesPerView={"auto"}
                 spaceBetween={10}
-                coverflowEffect={{ rotate: 0, stretch: 0, depth: 100, modifier: 3.5, slideShadows: true }}
+                coverflowEffect={{ rotate: 0, stretch: 0, depth: 100, modifier: 3.4, slideShadows: true }}
                 pagination={{
                     el: ".swiper_pagination",
                     clickable: true
