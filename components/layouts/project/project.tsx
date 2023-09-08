@@ -21,7 +21,7 @@ const Project = () => {
                 grabCursor={true}
                 loop={true}
                 centeredSlides={true}
-                slidesPerView={"auto"}
+                slidesPerView={3}
                 spaceBetween={10}
                 coverflowEffect={{ rotate: 0, stretch: 0, depth: 100, modifier: 3.4, slideShadows: true }}
                 pagination={{
