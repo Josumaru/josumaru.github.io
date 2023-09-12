@@ -1,4 +1,3 @@
-import Image from "next/image";
 import styles from "./skillCard.module.css"
 import reactIcon from "@/assets/images/react.png"
 import { PiCodesandboxLogoThin } from "react-icons/pi"
