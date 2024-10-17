@@ -11,7 +11,7 @@ const Header: NextPage = ({}) => {
         className="-top-40 left-0 w-40 md:left-60 md:-top-20"
       />
       <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]" />
-      <div className="z-50">
+      <div className="z-30">
         <div className="relative inline-flex h-8 overflow-hidden rounded-full p-[1px] focus:outline-none focus:ring-2 focus:ring-primary-400 focus:ring-offset-2 focus:ring-offset-primary-500 my-5">
           <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#FFFFFF_0%,#d66578_50%,#d66578_100%)]" />
           <span className="inline-flex h-full w-full items-center justify-center rounded-full bg-jwhite px-3 py-1 text-sm font-medium text-white backdrop-blur-3xl bg-white">

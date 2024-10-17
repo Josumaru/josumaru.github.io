@@ -1,6 +1,12 @@
 import { NextPage } from 'next'
-
-interface Props {}
+import { NavigationMenu } from '../ui/navigation-menu';
+import TooltipButton from '../other/TooltipButton';
+import { Button } from '../ui/button';
+import { ArrowUpRightFromSquare } from 'lucide-react';
+import githubIcon from "@/assets/images/svg/icons/github.svg";
+import instagramIcon from "@/assets/images/svg/icons/instagram.svg";
+import twitterIcon from "@/assets/images/svg/icons/twitter.svg";
+import htbIcon from "@/assets/images/svg/icons/htb.svg";
 
 const socialData = [
     {
@@ -29,8 +35,16 @@ const socialData = [
     },
   ];
 
-const ActionNavigation: NextPage<Props> = ({}) => {
-  return <div></div>
+const ActionNavigation: NextPage = ({}) => {
+  return <NavigationMenu>
+  {socialData.map((social, index) => (
+    <TooltipButton key={index} data={social} />
+  ))}
+  <Button>
+    <p className="font-bold">Hire Me</p>
+    <ArrowUpRightFromSquare />
+  </Button>
+</NavigationMenu>
 }
 
 export default ActionNavigation

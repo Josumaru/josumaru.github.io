@@ -12,8 +12,6 @@ import React from "react";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
 
-interface Props {}
-
 const components: { title: string; href: string; description: string }[] = [
     {
       title: "Alert Dialog",
@@ -52,7 +50,7 @@ const components: { title: string; href: string; description: string }[] = [
     },
   ];
 
-const MenuNavigation: NextPage<Props> = ({}) => {
+const MenuNavigation: NextPage = ({}) => {
   return (
     <NavigationMenu>
       <NavigationMenuList>
