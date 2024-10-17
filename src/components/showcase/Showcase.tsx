@@ -2,7 +2,7 @@ import Sass from "@/assets/images/showcase/ez-quotes.png";
 
 import { NextPage } from "next";
 import ShowcaseCard from "./ShowcaseCard";
-import { ShowcaseType } from "@/types/showcase";
+import { ShowcaseType } from "../../../types/showcase";
 
 const Showcase: NextPage = ({}) => {
   const data: ShowcaseType[] = [
