@@ -7,7 +7,7 @@ import ActionNavigation from "./ActionNavigation";
 
 const Navigation: NextPage = ({}) => {
   return (
-    <nav className="flex fixed top-0 z-50 w-full px-5 py-4 items-center justify-between backdrop-blur-md border-b border-primary-500 border-opacity-20">
+    <nav className="grid grid-cols-3 justify-between fixed top-0 z-50 w-full px-5 py-4 backdrop-blur-md border-b border-primary-500 border-opacity-20">
       <LeadingNavigation />
       <MenuNavigation />
       <ActionNavigation />

@@ -3,6 +3,7 @@ import Sass from "@/assets/images/showcase/ez-quotes.png";
 import { NextPage } from "next";
 import ShowcaseCard from "./ShowcaseCard";
 import { ShowcaseType } from "../../../types/showcase";
+import SectionTitle from "../other/SectionTitle";
 
 const Showcase: NextPage = ({}) => {
   const data: ShowcaseType[] = [
@@ -45,13 +46,10 @@ const Showcase: NextPage = ({}) => {
 
   return (
     <div>
-      <div className="flex flex-col items-center justify-center w-full">
-        <p className="text-2xl font-medium">Hall of Fame</p>
-        <p className="text-xl font-medium text-muted-foreground">
-          Projects I have worked on
-        </p>
-      </div>
-      <div className="w-full inline-flex flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-128px),transparent_100%)] mb-96">
+      <SectionTitle
+        props={{ title: "Hall of Fame", subtile: "Projects I have worked on" }}
+      />
+      <div className="w-full inline-flex flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-128px),transparent_100%)]">
         <div className="flex items-center justify-center md:justify-start animate-infinite-scroll">
           {data.map((data, index) => (
             <ShowcaseCard key={index} data={data} />
