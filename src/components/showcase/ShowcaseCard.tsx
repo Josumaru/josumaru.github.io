@@ -1,7 +1,7 @@
 import { NextPage } from "next";
 import { CardBody, CardContainer, CardItem } from "../ui/3d-card";
 import Image from "next/image";
-import { ShowcaseType } from "@/types/showcase";
+import { ShowcaseType } from "../../../types/showcase";
 
 interface Props {
   data: ShowcaseType;
