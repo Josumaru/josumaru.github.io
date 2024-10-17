@@ -67,3 +67,33 @@
     @apply bg-background text-foreground;
   }
 }
+
+/* Custom scrollbar for Webkit browsers (Chrome, Safari, etc.) */
+::-webkit-scrollbar {
+  width: 10px; /* Scrollbar width */
+  background-color: #ff241450;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent; /* Track background color */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #ff2414; /* Thumb color */
+  border-radius: 5px; /* Make thumb more rounded */
+  border: 2px solid transparent; /* Add spacing */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #ff2414; /* Thumb color on hover */
+}
+
+::-moz-selection {
+  color: white;
+  background: #ff2414;
+}
+
+::selection {
+  color: white;
+  background: #ff2414;
+}
