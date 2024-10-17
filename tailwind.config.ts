@@ -31,6 +31,17 @@ const config = {
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         primary: {
+          50: "#fff1f2",
+          100: "#ffe4e6",
+          200: "#fecdd3",
+          300: "#fda4af",
+          400: "#fb7185",
+          500: "#f43f5e",
+          600: "#e11d48",
+          700: "#be123c",
+          800: "#9f1239",
+          900: "#881337",
+          950: "#4c0519",
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",
         },
@@ -73,26 +84,26 @@ const config = {
           from: { height: "var(--radix-accordion-content-height)" },
           to: { height: "0" },
         },
-        "scroll": {
-          '0%': { transform: 'translateX(0)' },
-          '100%': { transform: 'translateX(-100%)' },
+        scroll: {
+          "0%": { transform: "translateX(0)" },
+          "100%": { transform: "translateX(-100%)" },
         },
-        "spotlight": {
+        spotlight: {
           "0%": {
-            "opacity": "0",
-            "transform": "translate(-72%, -62%) scale(0.5)",
+            opacity: "0",
+            transform: "translate(-72%, -62%) scale(0.5)",
           },
           "100%": {
-            "opacity": "1",
-            "transform": "translate(-50%,-40%) scale(1)",
+            opacity: "1",
+            transform: "translate(-50%,-40%) scale(1)",
           },
-        }
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
         "infinite-scroll": "scroll 30s linear infinite",
-        "spotlight": "spotlight 2s ease .75s 1 forwards",
+        spotlight: "spotlight 2s ease .75s 1 forwards",
       },
     },
   },

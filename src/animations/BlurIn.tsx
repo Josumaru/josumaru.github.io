@@ -24,7 +24,7 @@ const BlurIn: NextPage<Props> = ({ text }) => {
         "text-4xl md:text-5xl lg:text-6xl xl:text-7xl",
         "tracking-[-0.02em]",
         "md:leading-[4rem] lg:leading-[4.5rem] xl:leading-[5rem]",
-        "bg-gradient-to-r from-rose-300 via-rose-500 to-rose-600 inline-block text-transparent bg-clip-text"
+        "bg-gradient-to-r from-primary-300 via-primary-500 to-primary-600 inline-block text-transparent bg-clip-text"
       )}
     >
       {text}

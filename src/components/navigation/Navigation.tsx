@@ -14,7 +14,7 @@ import {
   NavigationMenuTrigger,
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
-
+import TooltipButton from "../other/TooltipButton";
 
 const components: { title: string; href: string; description: string }[] = [
   {
@@ -54,9 +54,43 @@ const components: { title: string; href: string; description: string }[] = [
   },
 ];
 
+import githubIcon from "@/assets/images/svg/icons/github.svg";
+import instagramIcon from "@/assets/images/svg/icons/instagram.svg";
+import twitterIcon from "@/assets/images/svg/icons/twitter.svg";
+import htbIcon from "@/assets/images/svg/icons/htb.svg";
+import { Button } from "../ui/button";
+import { ArrowUpRightFromSquare } from "lucide-react";
+
+const socialData = [
+  {
+    icon: githubIcon,
+    alt: "Github",
+    title: "@Josumaru",
+    url: "https://github.com/Josumaru",
+  },
+  {
+    icon: instagramIcon,
+    alt: "Instagram",
+    title: "@josumaru",
+    url: "https://www.instagram.com/josutomaru/",
+  },
+  {
+    icon: twitterIcon,
+    alt: "Twitter",
+    title: "@josumaru",
+    url: "https://twitter.com/josumaru",
+  },
+  {
+    icon: htbIcon,
+    alt: "Hack The Box",
+    title: "Josumaru@hacker",
+    url: "https://app.hackthebox.com/profile/josumaru",
+  }
+];
+
 const Navigation: NextPage = ({}) => {
   return (
-    <nav className="flex fixed top-0 z-50 w-full px-5 py-4 items-center justify-between backdrop-blur-md border-b border-rose-500 border-opacity-20">
+    <nav className="flex fixed top-0 z-50 w-full px-5 py-4 items-center justify-between backdrop-blur-md border-b border-primary-500 border-opacity-20">
       <p>
         Josumaru <span> / </span> <strong>Portfolio</strong>
       </p>
@@ -72,7 +106,6 @@ const Navigation: NextPage = ({}) => {
                       className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
                       href="/"
                     >
-                      {/* <Icon.logo className="h-6 w-6" /> */}
                       <div className="mb-2 mt-4 text-lg font-medium">
                         shadcn/ui
                       </div>
@@ -121,7 +154,15 @@ const Navigation: NextPage = ({}) => {
           </NavigationMenuItem>
         </NavigationMenuList>
       </NavigationMenu>
-      <p>Github</p>
+      <NavigationMenu>
+        {socialData.map((social, index) => (
+          <TooltipButton key={index} data={social}/>
+        ))}
+        <Button>
+          <p className="font-bold">Hire Me</p>
+          <ArrowUpRightFromSquare />
+        </Button>
+      </NavigationMenu>
     </nav>
   );
 };
