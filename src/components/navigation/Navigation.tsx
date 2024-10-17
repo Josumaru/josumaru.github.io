@@ -15,7 +15,6 @@ import {
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
 
-interface Props {}
 
 const components: { title: string; href: string; description: string }[] = [
   {
@@ -55,7 +54,7 @@ const components: { title: string; href: string; description: string }[] = [
   },
 ];
 
-const Navigation: NextPage<Props> = ({}) => {
+const Navigation: NextPage = ({}) => {
   return (
     <nav className="flex fixed top-0 z-50 w-full px-5 py-4 items-center justify-between backdrop-blur-md border-b border-rose-500 border-opacity-20">
       <p>

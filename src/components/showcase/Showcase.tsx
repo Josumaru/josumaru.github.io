@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Sass from "@/assets/images/showcase/ez-quotes.png";
 
 import { NextPage } from "next";

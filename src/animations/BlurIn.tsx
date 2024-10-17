@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import { NextPage } from "next";
 
 interface Props {
-  text: String;
+  text: string;
 }
 
 const BlurIn: NextPage<Props> = ({ text }) => {

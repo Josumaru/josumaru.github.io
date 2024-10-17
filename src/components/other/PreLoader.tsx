@@ -3,9 +3,8 @@ import { NextPage } from "next";
 
 import React, { useEffect } from "react";
 import gsap from "gsap";
-interface Props {}
 
-const PreLoader: NextPage<Props> = ({}) => {
+const PreLoader: NextPage = ({}) => {
   useEffect(() => {
     const tl = gsap.timeline();
 
