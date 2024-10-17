@@ -23,7 +23,7 @@ const Header: NextPage = ({}) => {
       </div>
       <div>
         <p className="text-5xl md:text-6xl lg:text-7xl font-bold text-center max-w-[700px]">
-          <BlurIn text="Splendid" /> is Another Word of <BlurIn text="Alone" />
+          <BlurIn text="Alone" /> is Another Word for <BlurIn text="Splendid" />
         </p>
       </div>
       <p className="max-w-screen-sm mx-auto text-xl text-muted-foreground text-center">
