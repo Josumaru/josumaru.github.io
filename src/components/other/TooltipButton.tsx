@@ -23,7 +23,7 @@ const TooltipButton: NextPage<Props> = ({ data }) => {
     <TooltipProvider>
       <Tooltip>
         <TooltipTrigger asChild>
-          <Button variant="ghost" className="hover:bg-primary-500 hover:bg-opacity-20">
+          <Button variant="ghost" className="hover:bg-primary-500/50">
             <Image src={data.icon} alt={data.alt} className="text-muted-foreground"/>
           </Button>
         </TooltipTrigger>

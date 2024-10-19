@@ -7,6 +7,8 @@ import githubIcon from "@/assets/images/svg/icons/github.svg";
 import instagramIcon from "@/assets/images/svg/icons/instagram.svg";
 import twitterIcon from "@/assets/images/svg/icons/twitter.svg";
 import htbIcon from "@/assets/images/svg/icons/htb.svg";
+import HoverGradientButton from "../other/HoverGradientButton";
+import { HoverBorderGradient } from "../ui/hover-border-gradient";
 
 const socialData = [
   {
@@ -42,10 +44,10 @@ const ActionNavigation: NextPage = ({}) => {
         {socialData.map((social, index) => (
           <TooltipButton key={index} data={social} />
         ))}
-        <Button className="ml-1">
-          <p className="font-bold text-opacity-90 text-white">Hire Me</p>
-          <ArrowUpRightFromSquare />
-        </Button>
+          <Button className="ml-1">
+            <p className="font-bold text-opacity-90 text-white">Hire Me</p>
+            <ArrowUpRightFromSquare />
+          </Button>
       </NavigationMenu>
     </div>
   );
