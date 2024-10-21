@@ -45,7 +45,7 @@ const Showcase: NextPage = ({}) => {
   ];
 
   return (
-    <div>
+    <div id="showcase" className="hidden md:block">
       <SectionTitle
         data={{ title: "Hall of Fame", subtile: "Projects I have worked on" }}
       />
