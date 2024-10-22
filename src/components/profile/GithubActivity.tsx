@@ -4,9 +4,8 @@ import { useTheme } from "next-themes";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 
-interface Props {}
 
-const GithubActivity: NextPage<Props> = ({}) => {
+const GithubActivity: NextPage = ({}) => {
   const { theme } = useTheme();
   const [isLoading, setIsLoading] = useState(true);
   const [isDark, setIsDark] = useState<boolean>(false);
@@ -21,7 +20,7 @@ const GithubActivity: NextPage<Props> = ({}) => {
     );
 
   return (
-    <div className="relative w-full h-full max-[380px]:h-[100px] max-[474px]:h-[120px] max-[620px]:h-[150px] max-[764px]:h-[200px]">
+    <div className="relative w-full h-full max-[380px]:h-[100px] max-[474px]:h-[10px] max-[620px]:h-[150px] max-[764px]:h-[200px]">
       <Image
         src="https://github-readme-activity-graph.vercel.app/graph?username=Josumaru&radius=16&theme=redical&area=true&order=5&hide_border=true&hide_title=true&bg_color=transparent&line=fb7185&point=be123c&color=0d1117"
         height="300"

@@ -15,6 +15,12 @@ const geistMono = localFont({
   weight: "100 900",
 });
 
+const interRegular = localFont({
+  src: "./fonts/InterRegular.ttf",
+  variable: "--font-inter",
+  weight: "400 900",
+})
+
 export const metadata: Metadata = {
   title: "Josumaru",
   description: "Hello, my name is Joko Supriyanto, I am a software developer, I also develop backends and study how artificial intelligence and machine learning are applied in applications to support integrated digital facilities.",
@@ -35,7 +41,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased dark:bg-black`}
+        className={`${interRegular.variable} antialiased dark:bg-black`}
       >
         <ThemeProvider enableSystem={false} defaultTheme="light" attribute="class">{children}</ThemeProvider>
       </body>

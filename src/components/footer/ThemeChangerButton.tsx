@@ -5,9 +5,7 @@ import { useTheme } from "next-themes";
 import Image from "next/image";
 import { Button } from "../ui/button";
 
-interface Props {}
-
-const ThemeChangerButton: NextPage<Props> = ({}) => {
+const ThemeChangerButton: NextPage = ({}) => {
   const { theme, setTheme } = useTheme();
   const handleClick = () => {
     setTheme(theme === "light" ? "dark" : "light");

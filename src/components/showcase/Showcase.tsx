@@ -1,46 +1,65 @@
-import Sass from "@/assets/images/showcase/ez-quotes.png";
-
 import { NextPage } from "next";
 import ShowcaseCard from "./ShowcaseCard";
 import { ShowcaseType } from "../../../types/showcase";
 import SectionTitle from "../other/SectionTitle";
+import { ShowcaseImageConstants } from "@/constants/ShowcaseImageConstants";
 
 const Showcase: NextPage = ({}) => {
   const data: ShowcaseType[] = [
+    // {
+    //   subtitle: "",
+    //   alt: "",
+    //   url: "",
+    //   image: ShowcaseImageConstants.raijin,
+    //   title: "Sheesh",
+    // },
     {
-      subtitle: "Some SUbtitles",
-      alt: "",
-      url: "",
-      image: Sass,
-      title: "Sheesh",
+      subtitle:
+        "Innovation competition and exhibition at Universitas Muhammadiyah Surakarta that took place over 5 days.",
+      alt: "UMS IID",
+      url: "https://ums-iid.com/",
+      image: ShowcaseImageConstants.umsiid,
+      title: "UMS International Innovation Day 2024",
     },
     {
-      subtitle: "Some SUbtitles",
-      alt: "",
-      url: "",
-      image: Sass,
+      subtitle:
+        "Anime streaming platform that utilizes data scraping from the samehadaku.care website.",
+      alt: "Raijin",
+      url: "https://github.com/Josumaru/raijin",
+      image: ShowcaseImageConstants.raijin,
       title: "Raijin",
     },
     {
-      subtitle: "Some SUbtitles",
-      alt: "",
-      url: "",
-      image: Sass,
-      title: "Fostifest 24",
+      subtitle:
+        "Online health consultation that presents many cute and funny assistants who are ready to answer",
+      alt: "Virtual Doctor",
+      url: "https://vido.josumaru.my.id/",
+      image: ShowcaseImageConstants.vido,
+      title: "VIDO - Virtual Doctor",
     },
     {
-      subtitle: "Some SUbtitles",
-      alt: "",
-      url: "",
-      image: Sass,
-      title: "UMS International Invention Day",
+      subtitle:
+        "This is my web portofilio made with the latest technology and integrated",
+      alt: "Josumaru Portfolio Websites",
+      url: "https://josumaru.my.id",
+      image: ShowcaseImageConstants.josumaru,
+      title: "Josumaru Portfolio Websites",
     },
     {
-      subtitle: "Some SUbtitles",
-      alt: "",
-      url: "",
-      image: Sass,
+      subtitle:
+        "Anugerah Coating Powder Blora Business Landing Page which provides various services",
+      alt: "Anugearah Coating Powder",
+      url: "https://anugerahpowdercoating.com/",
+      image: ShowcaseImageConstants.anugerah,
       title: "Anugerah Coating Powder",
+    },
+    {
+      subtitle:
+        "FOSTIFEST is an annual activity organized by the Forum Open Source Teknik Informatika (FOSTI) UMS.",
+      alt: "Fostifest 2024",
+      url: "https://fostifest.fostiums.org/",
+      image: ShowcaseImageConstants.fostifest,
+      title: "Fostifest 2024",
     },
   ];
 

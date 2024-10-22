@@ -1,14 +1,8 @@
 "use client";
 import { NextPage } from "next";
-import GithubIcon from "@/assets/images/svg/icons/github.svg";
-import instagramIcon from "@/assets/images/svg/icons/instagram.svg";
-import twitterIcon from "@/assets/images/svg/icons/twitter.svg";
-import htbIcon from "@/assets/images/svg/icons/htb.svg";
 import Image from "next/image";
 import Link from "next/link";
-import TooltipButton from "../other/TooltipButton";
 import { SocialImageConstants } from "@/constants/SocialImageConstants";
-import { IconImageConstants } from "@/constants/IconImageConstants";
 import ThemeChangerButton from "./ThemeChangerButton";
 
 const Footer: NextPage = ({}) => {
@@ -34,16 +28,16 @@ const Footer: NextPage = ({}) => {
       title: "Product",
       subtitles: [
         {
-          name: "Raijin",
-          url: "",
-        },
-        {
-          name: "Sheesh",
-          url: "",
+          name: "Raijin Streaming Apps",
+          url: "https://github.com/Josumaru/raijin",
         },
         {
           name: "UMS IID",
-          url: "",
+          url: "https://ums-iid.com/",
+        },
+        {
+          name: "Anugerah",
+          url: "https://anugerahpowdercoating.com/",
         },
       ],
     },
@@ -52,35 +46,38 @@ const Footer: NextPage = ({}) => {
       subtitles: [
         {
           name: "Websites",
-          url: "",
+          url: "https://overlogic.id",
         },
         {
           name: "Instagram",
-          url: "",
+          url: "https://www.instagram.com/overlogic.id/",
         },
         {
           name: "Linkedin",
-          url: "",
+          url: "https://www.linkedin.com/in/overlogic",
         },
-        { name: "Discord", url: "" },
+        { name: "Discord", url: "https://discord.com/app" },
       ],
     },
     {
-      title: "Overlogic",
+      title: "Domain",
       subtitles: [
         {
-          name: "Websites",
-          url: "",
+          name: "josumaru.my.id",
+          url: "https://josumaru.my.id",
         },
         {
-          name: "Instagram",
-          url: "",
+          name: "raijin.josumaru.my.id",
+          url: "https://raijin.josumaru.my.id/api/anime/ongoing/1",
         },
         {
-          name: "Linkedin",
-          url: "",
+          name: "vido.josumaru.my.id",
+          url: "https://vido.josumaru.my.id",
         },
-        { name: "Discord", url: "" },
+        {
+          name: "hpc.josumaru.my.id",
+          url: "https://hpc.josumaru.my.id",
+        },
       ],
     },
   ];
@@ -88,7 +85,7 @@ const Footer: NextPage = ({}) => {
     <div className="w-full">
       <div className="[mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-128px),transparent_100%)] border-t border-primary-500/20 " />
       <div className="flex items-center w-full p-5 md:justify-center py-10 mt-2">
-        <div className="flex flex-col md:flex-row max-w-7xl">
+        <div className="flex flex-col justify-between w-full md:flex-row max-w-7xl">
           <div className="md:w-1/3">
             <p className="mb-5">
               Josumaru / <strong>Portfolio</strong>

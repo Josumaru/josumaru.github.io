@@ -1,15 +1,8 @@
 import { NextPage } from "next";
 
-import { cn } from "@/lib/utils";
 import React from "react";
 import { BentoGrid, BentoGridItem } from "../ui/bento-grid";
 import Image from "next/image";
-import {
-  IconClipboardCopy,
-  IconFileBroken,
-  IconSignature,
-  IconTableColumn,
-} from "@tabler/icons-react";
 
 import JosumaruProfile from "@/assets/images/bento-grid/josumaru.jpeg";
 import { BoxIcon, GitBranch, User2 } from "lucide-react";
@@ -32,9 +25,7 @@ import GithubActivity from "./GithubActivity";
 
 const logos = [nextLogo, reduxLogo, expoLogo, bunLogo, tailwindLogo, typeScriptLogo, javaScriptLogo, reactLogo, linuxLogo, dartLogo, flutterLogo, androidLogo, kotlinLogo];
 
-interface Props {}
-
-const Profile: NextPage<Props> = ({}) => {
+const Profile: NextPage = ({}) => {
 
   return (
     <div id="profile" className="flex items-center justify-center flex-col">
@@ -47,7 +38,7 @@ const Profile: NextPage<Props> = ({}) => {
       <BentoGrid className="mx-2 max-w-7xl md:auto-rows-[20rem] mt-20">
         {items.map((item, i) => (
           <BentoGridItem
-            key={i}
+            key={`Grid Item ${i}`}
             title={item.title}
             description={item.description}
             header={item.header}
@@ -59,9 +50,7 @@ const Profile: NextPage<Props> = ({}) => {
     </div>
   );
 };
-const Skeleton = () => (
-  <div className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl dark:bg-dot-white/[0.2] bg-dot-black/[0.2] [mask-image:radial-gradient(ellipse_at_center,white,transparent)]  border border-transparent dark:border-white/[0.2] bg-neutral-100 dark:bg-black"></div>
-);
+
 const items = [
   {
     title: "Joko Supriyanto",
@@ -84,7 +73,7 @@ const items = [
       <div className="w-full max-md:h-[200px] pt-5 h-full inline-flex flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-128px),transparent_100%)]">
         <div className="flex items-center justify-center md:justify-start animate-infinite-scroll">
           {logos.map((logo, index) => (
-            <div className="items-center mx-2 h-[42px] w-max">
+            <div className="items-center mx-2 h-[42px] w-max" key={index}>
               <Image
                 key={index}
                 src={logo}
@@ -96,7 +85,7 @@ const items = [
         </div>
         <div className="flex items-center justify-center md:justify-start animate-infinite-scroll">
           {logos.map((logo, index) => (
-            <div className="items-center mx-2 h-[42px] w-max">
+            <div className="items-center mx-2 h-[42px] w-max" key={index}>
               <Image
                 key={index}
                 src={logo}

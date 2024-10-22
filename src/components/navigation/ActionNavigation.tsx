@@ -2,13 +2,11 @@ import { NextPage } from "next";
 import { NavigationMenu } from "../ui/navigation-menu";
 import TooltipButton from "../other/TooltipButton";
 import { Button } from "../ui/button";
-import { ArrowUpRightFromSquare, DownloadCloudIcon } from "lucide-react";
+import { ArrowUpRightFromSquare } from "lucide-react";
 import githubIcon from "@/assets/images/svg/icons/github.svg";
 import instagramIcon from "@/assets/images/svg/icons/instagram.svg";
 import twitterIcon from "@/assets/images/svg/icons/twitter.svg";
 import htbIcon from "@/assets/images/svg/icons/htb.svg";
-import HoverGradientButton from "../other/HoverGradientButton";
-import { HoverBorderGradient } from "../ui/hover-border-gradient";
 import Link from "next/link";
 
 const socialData = [
