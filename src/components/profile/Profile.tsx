@@ -5,7 +5,7 @@ import { BentoGrid, BentoGridItem } from "../ui/bento-grid";
 import Image from "next/image";
 
 import JosumaruProfile from "@/assets/images/bento-grid/josumaru.jpeg";
-import { BoxIcon, GitBranch, User2 } from "lucide-react";
+import { BoxIcon, Code2Icon, GitBranch, User2 } from "lucide-react";
 import SectionTitle from "../other/SectionTitle";
 
 import nextLogo from "@/assets/images/svg/logos/nextjs.svg";
@@ -103,17 +103,17 @@ const items = [
   {
     title: "The Art of Teaching",
     description: "Computer Lab Assistant & Computer Lab Maintener at FKI UMS",
-    header: <div className="flex max-md:h-[200px] items-center justify-center text-primary-500 h-full">undefined image</div>,
+    header: <div className="flex max-md:h-[200px] items-center text-sm justify-center text-primary-500 h-full">_next/image?url=/_next/static/media can&apos;t be resolved</div>,
     className: "md:col-span-2",
     icon: <User2 className="h-4 w-4 text-neutral-500" />,
   },
   {
-    title: "Github Activity",
+    title: "Ultimate Jutsu",
     description:
-      "Try new things, discover the differences. It can make your life better and make you think ahead.",
-    header: <GithubActivity />,
+      "This jutsu has suddenly become unusable since I entered this world.",
+    header: <div className="flex max-md:h-[200px] items-center text-sm justify-center text-primary-500 h-full">_next/image?url=/_next/static/media can&apos;t be resolved</div>,
     className: "md:col-span-2",
-    icon: <GitBranch className="h-4 w-4 text-neutral-500" />,
+    icon: <Code2Icon className="h-4 w-4 text-neutral-500" />,
   },
   {
     title: "Github Activity",

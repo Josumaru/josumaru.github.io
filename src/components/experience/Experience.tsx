@@ -69,7 +69,7 @@ const content = [
         (FKI) at Universitas Muhammadiyah Surakarta. This role allowed me to
         assist students in various lab practices. My responsibilities included
         guiding students through hands-on tasks, troubleshooting issues, and
-        ensuring that the lab&rsquos equipment was always in optimal condition.
+        ensuring that the lab&rsquo;s equipment was always in optimal condition.
         Working closely with both students and faculty members, I honed my
         technical and communication skills, and the experience taught me the
         importance of teamwork, patience, and attention to detail. Being a

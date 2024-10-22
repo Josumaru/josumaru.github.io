@@ -10,8 +10,8 @@ interface Props {
 const SectionTitle: NextPage<Props> = ({ data }) => {
   return (
     <div className="flex flex-col items-center justify-center w-full">
-      <p className="text-2xl font-medium">{data.title}</p>
-      <p className="text-xl font-medium text-muted-foreground">
+      <p className="text-xl md:text-2xl font-medium">{data.title}</p>
+      <p className="text-md md:text-xl font-medium text-muted-foreground text-center">
         {data.subtile}
       </p>
     </div>

@@ -105,7 +105,7 @@ const Navigation: NextPage = ({}) => {
       </div>
       <div>
         <div
-          className="w-[300px] fixed left-0 z-[99] bg-white dark:bg-black top-0 h-screen duration-500 py-6"
+          className="p-5 w-[300px] fixed left-0 z-[99] bg-white dark:bg-black top-0 h-screen duration-500 py-6"
           style={{ left: showMobileMenu ? 0 : -300 }}
         >
           <div className="mb-5">
@@ -120,7 +120,7 @@ const Navigation: NextPage = ({}) => {
               </Link>
             );
           })}
-          <div className="w-auto mt-5 hover:shadow-xl hover:shadow-primary-500/75 rounded-xl duration-500">
+          <div className="bottom-5 absolute w-[260px] mt-5 hover:shadow-xl hover:shadow-primary-500/75 rounded-xl duration-500">
             <Button className="rounded-xl w-full bg-gradient-to-r from-primary-400 via-primary-500 to-primary-400">
               <Link
                 href={"https://www.linkedin.com/in/josumaru/"}
