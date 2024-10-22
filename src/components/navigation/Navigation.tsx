@@ -79,7 +79,7 @@ const Navigation: NextPage = ({}) => {
           />
         </div>
         <nav
-          className={`flex w-full justify-between top-0 z-50 py-4 max-w-7xl`}
+          className={`px-3 flex w-full justify-between top-0 z-50 py-4 max-w-7xl`}
         >
           <div className="flex gap-5 px-2">
             <LeadingNavigation />
