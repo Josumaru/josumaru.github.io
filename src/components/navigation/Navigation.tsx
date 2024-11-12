@@ -52,7 +52,7 @@ const Navigation: NextPage = ({}) => {
   };
 
   return (
-    <div>
+    <div className="duration-300 transition-transform">
       <div
         className={`w-full flex flex-col items-center justify-center z-50 duration-300  backdrop-blur-md border-b border-primary-500 border-opacity-20 ${
           hideNavbar ? "-translate-y-full" : "translate-y-0"
@@ -67,7 +67,7 @@ const Navigation: NextPage = ({}) => {
         >
           <Link href={"https://overlogic.id"} target="_blank">
             <p className="text-xs font-medium text-white cursor-pointer hover:underline duration-500">
-              Get a good deal by visiting overlogic.id
+              Get a good deal by visiting <strong>overlogic.id</strong>
             </p>
           </Link>
           <Image
@@ -79,7 +79,7 @@ const Navigation: NextPage = ({}) => {
           />
         </div>
         <nav
-          className={`px-3 flex w-full justify-between top-0 z-50 py-4 max-w-7xl`}
+          className={`max-sm:px-3 flex w-full duration-300 transition-transform justify-between top-0 z-50 py-4 max-w-7xl`}
         >
           <div className="flex gap-5 px-2">
             <LeadingNavigation />
@@ -120,7 +120,7 @@ const Navigation: NextPage = ({}) => {
               </Link>
             );
           })}
-          <div className="bottom-5 absolute w-[260px] mt-5 hover:shadow-xl hover:shadow-primary-500/75 rounded-xl duration-500">
+          <div className="bottom-5 z-50 absolute w-[260px] mt-5 hover:shadow-xl hover:shadow-primary-500/75 rounded-xl duration-500">
             <Button className="rounded-xl w-full bg-gradient-to-r from-primary-400 via-primary-500 to-primary-400">
               <Link
                 href={"https://www.linkedin.com/in/josumaru/"}

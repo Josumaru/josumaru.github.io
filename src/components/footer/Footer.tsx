@@ -83,7 +83,7 @@ const Footer: NextPage = ({}) => {
   ];
   return (
     <div className="w-full">
-      <div className="[mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-128px),transparent_100%)] border-t border-primary-500/20 " />
+      {/* <div className="[mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-128px),transparent_100%)] border-t border-primary-500/20 " /> */}
       <div className="flex items-center w-full p-5 md:justify-center py-10 mt-2">
         <div className="flex flex-col justify-between w-full md:flex-row max-w-7xl">
           <div className="md:w-1/3">

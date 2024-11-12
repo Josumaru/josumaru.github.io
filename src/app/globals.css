@@ -68,6 +68,11 @@
   }
 }
 
+body {
+  font-family: var(--font-geist);
+}
+
+
 /* Custom scrollbar for Webkit browsers (Chrome, Safari, etc.) */
 ::-webkit-scrollbar {
   width: 10px; /* Scrollbar width */

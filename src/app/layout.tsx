@@ -4,10 +4,10 @@ import "./globals.css";
 import { ThemeProvider } from "next-themes";
 import openGraph from "@/assets/opengraph/opengraph.png"
 
-const interRegular = localFont({
-  src: "./fonts/InterRegular.ttf",
-  variable: "--font-inter",
-  weight: "400 900",
+const geistRegular = localFont({
+  src: "./fonts/GeistVF.woff",
+  variable: "--font-geist",
+  weight: "400",
 })
 
 export const metadata: Metadata = {
@@ -30,7 +30,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${interRegular.variable} antialiased dark:bg-black`}
+        className={`${geistRegular.variable} antialiased dark:bg-black`}
       >
         <ThemeProvider enableSystem={false} defaultTheme="light" attribute="class">{children}</ThemeProvider>
       </body>

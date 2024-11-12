@@ -1,7 +1,6 @@
 "use client";
 import { NextPage } from "next";
 import { useTheme } from "next-themes";
-import Image from "next/image";
 import { useEffect, useState } from "react";
 
 
@@ -21,7 +20,7 @@ const GithubActivity: NextPage = ({}) => {
 
   return (
     <div className="relative w-full h-full max-[380px]:h-[100px] max-[474px]:h-[140px] max-[620px]:h-[150px] max-[764px]:h-[200px]">
-      <Image
+      <img
         src="https://github-readme-activity-graph.vercel.app/graph?username=Josumaru&radius=16&theme=redical&area=true&order=5&hide_border=true&hide_title=true&bg_color=transparent&line=fb7185&point=be123c&color=0d1117"
         height="300"
         alt="activity-graph graph"
@@ -29,7 +28,7 @@ const GithubActivity: NextPage = ({}) => {
         className="grayscale hover:grayscale-0 object-fill duration-500 h-full w-full absolute"
         style={{ display: !isDark ? "block" : "none" }}
       />
-      <Image
+      <img
         src="https://github-readme-activity-graph.vercel.app/graph?username=Josumaru&radius=16&theme=redical&area=true&order=5&hide_border=true&hide_title=true&bg_color=transparent&line=fb7185&point=be123c&color=ffffff"
         height="300"
         alt="activity-graph graph"

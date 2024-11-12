@@ -3,6 +3,7 @@ import { CardBody, CardContainer, CardItem } from "../ui/3d-card";
 import Image from "next/image";
 import { ShowcaseType } from "../../../types/showcase";
 import Link from "next/link";
+import { ArrowUpRightFromSquare } from "lucide-react";
 
 interface Props {
   data: ShowcaseType;
@@ -42,7 +43,10 @@ const ShowcaseCard: NextPage<Props> = ({ data }) => {
               target="__blank"
               className="px-4 group-hover/card:text-primary-500 py-2 rounded-xl text-xs font-normal dark:text-white"
             >
-              Visit
+              <div className="flex items-center gap-1 justify-center">
+                <p>Visit</p>
+                <ArrowUpRightFromSquare width={11}/>
+              </div>
             </CardItem>
           </div>
         </CardBody>
