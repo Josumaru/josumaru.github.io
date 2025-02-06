@@ -9,7 +9,7 @@ const AdScript = ({ adClient }: Props) => {
   return (
     <Script
       async
-      src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-${adClient}`}
+      src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${adClient}`}
       crossOrigin="anonymous"
       strategy="afterInteractive"
     />
