@@ -15,11 +15,13 @@ import { usePathname } from "next/navigation";
 
 const MenuNavigation: NextPage = ({}) => {
   const pathName = usePathname();
-  const [hash, setHash] = useState(window.location.hash);
+  const [hash, setHash] = useState("");
 
   useEffect(() => {
-    setHash(window.location.hash);
-  }, [window.location.hash]);
+    if (typeof window !== "undefined") {
+      setHash(window.location.hash);
+    }
+  }, []);
 
   return (
     <div className="col-span-1 flex items-center justify-center">
