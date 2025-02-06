@@ -62,6 +62,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <meta
+          name="google-adsense-account"
+          content={process.env.NEXT_PUBLIC_AD_CLIENT}
+        />
+
+        <AdScript adClient={process.env.NEXT_PUBLIC_AD_CLIENT} />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
@@ -75,9 +83,6 @@ export default function RootLayout({
           <Footer />
         </ThemeProvider>
       </body>
-      <head>
-        <AdScript adClient={process.env.NEXT_PUBLIC_AD_CLIENT}/>
-      </head>
     </html>
   );
 }
