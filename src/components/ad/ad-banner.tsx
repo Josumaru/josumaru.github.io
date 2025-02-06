@@ -15,6 +15,18 @@ const AdBanner = ({
   adClient,
   dataFullWidthResponsive = true,
 }: props) => {
+  useEffect(() => {
+    try {
+      if (typeof window !== "undefined") {
+        ((window as any).adsbygoogle = (window as any).adsbygoogle || []).push(
+          {}
+        );
+      }
+    } catch (error: any) {
+      console.log(error.message);
+    }
+  }, []);
+
   return (
     <div className="rounded-xl border-zinc-500 overflow-hidden mt-4">
       <ins
@@ -25,7 +37,6 @@ const AdBanner = ({
         data-ad-format={adFormat}
         data-full-width-responsive={dataFullWidthResponsive.toString()}
       ></ins>
-      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
     </div>
   );
 };
