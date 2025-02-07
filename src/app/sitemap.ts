@@ -2,7 +2,6 @@ import { MetadataRoute } from "next";
 import { Blog } from "@/types/blog";
 import { getBlogs } from "@/lib/blog";
 
-export const dynamic = "force-dynamic";
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const blogPostsSitemap = await generateBlogPostsSitemapObjects();
   return [
