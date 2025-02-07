@@ -6,6 +6,7 @@ import Navigation from "@/components/navbar/navigation";
 import openGraph from "@/assets/opengraph/opengraph.png";
 import { ThemeProvider } from "@/components/common/theme-provider";
 import AdScript from "@/components/ad/ad-script";
+import { Analytics } from "@vercel/analytics/react";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -80,6 +81,7 @@ export default function RootLayout({
         >
           <Navigation />
           {children}
+          <Analytics />
           <Footer />
         </ThemeProvider>
       </body>
