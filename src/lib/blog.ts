@@ -36,5 +36,10 @@ export const getBlogs = async (): Promise<Blog[]> => {
       content,
     };
   });
+  blogs.sort((a, b) => {
+    const dateA = new Date(a.metadata.date.createdAt).getTime();
+    const dateB = new Date(b.metadata.date.createdAt).getTime();
+    return dateB - dateA;
+  });
   return blogs;
 };

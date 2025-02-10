@@ -120,7 +120,7 @@ const Page: NextPage<Props> = async ({ params }) => {
               subtile: "You might like this post",
             }}
           />
-          <div className="grid grid-cols-2 container w-full gap-2">
+          <div className="grid grid-cols-1 md:grid-cols-2 container w-full gap-2">
             {blogs.slice(0, 2).map((blog) => (
               <BlogCard key={blog.slug} blog={blog} />
             ))}
