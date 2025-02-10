@@ -28,7 +28,7 @@ const AdBanner = ({
   }, []);
 
   return (
-    <div className="rounded-xl border-zinc-500 overflow-hidden mt-4">
+    <div className="rounded-xl bg-background border-zinc-500 overflow-hidden mt-4">
       <ins
         className="adsbygoogle"
         style={{ display: "block" }}

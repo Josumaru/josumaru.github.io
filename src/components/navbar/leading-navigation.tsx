@@ -8,7 +8,9 @@ const LeadingNavigation: NextPage = ({}) => {
   return (
     <p className="col-span-1 flex items-center gap-1">
       Josumaru <span> / </span>{" "}
-      <strong>{pathName.startsWith("/blog") ? "Blog" : "Portfolio"}</strong>
+      <strong>
+        {pathName === "/" ? "Portfolio" : "Blog"}
+      </strong>
     </p>
   );
 };

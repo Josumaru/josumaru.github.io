@@ -64,7 +64,7 @@ const Page: NextPage<Props> = async ({ params }) => {
         <title>{blog?.metadata.title}</title>
       </Head>
       <div className="flex gap-4 container">
-        <div className="w-3/12 lg:block hidden mt-28">
+        <div className="w-1/12 lg:block hidden mt-28">
           <Link
             href={"/blog"}
             className="flex items-center text-muted-foreground hover:text-primary transition-colors"
@@ -73,9 +73,9 @@ const Page: NextPage<Props> = async ({ params }) => {
             <p>Back</p>
           </Link>
         </div>
-        <div className="w-full lg:w-6/12 h-screen no-scrollbar overflow-y-scroll px-2">
+        <div className="w-full lg:w-8/12 h-screen no-scrollbar overflow-y-scroll px-2">
           <div className="flex gap-4 flex-col mt-28">
-            <h1 className="text-4xl">{blog?.metadata.title}</h1>
+            <h1 className="text-xl md:text-4xl">{blog?.metadata.title}</h1>
             <ReadingTime
               createdAt={blog?.metadata.date.createdAt}
               length={blog?.content.length}

@@ -1,6 +1,8 @@
 import type { MDXComponents } from 'mdx/types';
 import Image, { ImageProps } from 'next/image';
 import CodeBlock from './components/code-block';
+import A from './components/mdx-components/a';
+import Code from './components/mdx-components/code';
 export function useMDXComponents(components: MDXComponents): MDXComponents {
   return {
     h1: props => <h1 style={{ fontSize: 24, marginBottom: 16, marginTop: 16 }} {...props} />,
@@ -53,8 +55,9 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
         {...props}
       />
     ),
-    a: props => <a {...props} style={{color: "#52A8FF"}} target='_blank'/>,
+    a: props => <A {...props}/>,
     CodeBlock: props => <CodeBlock {...props} />,
+    // code: props => <Code {...props}/>,
     pre: props => (
       <pre
         style={{
