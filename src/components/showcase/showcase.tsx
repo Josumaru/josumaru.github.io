@@ -68,6 +68,13 @@ const Showcase: NextPage = ({}) => {
       url: 'https://pineleaf.id',
       image: ShowcaseImageConstants.pineleaf,
       title: 'Pineleaf'
+    },
+    {
+      subtitle: 'A platform to explore, watch your favorite anime, and read manga seamlessly in one place.',
+      alt: 'Animanga',
+      url: 'https://anime.josumaru.my.id/home',
+      image: ShowcaseImageConstants.animanga,
+      title: 'Animanga'
     }
   ];
 

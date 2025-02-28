@@ -7,6 +7,7 @@ import josumaru from '@/assets/images/showcase/josumaru.png';
 import pineleaf from '@/assets/images/showcase/pineleaf.png';
 import sheesh from '@/assets/images/showcase/sheesh.png';
 import fospresence from '@/assets/images/showcase/fospresence.png';
+import animanga from '@/assets/images/showcase/animanga.png';
 
 export const ShowcaseImageConstants = {
   raijin,
@@ -17,5 +18,6 @@ export const ShowcaseImageConstants = {
   josumaru,
   sheesh,
   pineleaf,
-  fospresence
+  fospresence,
+  animanga
 };

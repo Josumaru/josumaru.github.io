@@ -15,7 +15,7 @@ import dartLogo from '@/assets/images/svg/logos/dart.svg';
 import expoLogo from '@/assets/images/svg/logos/expo.svg';
 import kotlinLogo from '@/assets/images/svg/logos/kotlin.svg';
 import reactLogo from '@/assets/images/svg/logos/react.svg';
-import reduxLogo from '@/assets/images/svg/logos/redux.svg';
+import zustandLogo from '@/assets/images/svg/logos/zustand.svg';
 import tailwindLogo from '@/assets/images/svg/logos/tailwind.svg';
 import flutterLogo from '@/assets/images/svg/logos/flutter.svg';
 import bunLogo from '@/assets/images/svg/logos/bun.svg';
@@ -23,7 +23,7 @@ import javaScriptLogo from '@/assets/images/svg/logos/javascript.svg';
 import linuxLogo from '@/assets/images/svg/logos/linux.svg';
 import GithubActivity from './GithubActivity';
 
-const logos = [nextLogo, reduxLogo, expoLogo, bunLogo, tailwindLogo, typeScriptLogo, javaScriptLogo, reactLogo, linuxLogo, dartLogo, flutterLogo, androidLogo, kotlinLogo];
+const logos = [nextLogo, zustandLogo, expoLogo, bunLogo, tailwindLogo, typeScriptLogo, javaScriptLogo, reactLogo, linuxLogo, dartLogo, flutterLogo, androidLogo, kotlinLogo];
 
 const Profile: NextPage = ({}) => {
   return (
