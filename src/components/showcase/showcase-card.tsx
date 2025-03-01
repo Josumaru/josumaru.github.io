@@ -11,7 +11,7 @@ interface Props {
 
 const ShowcaseCard: NextPage<Props> = ({ data }) => {
   return (
-    <Link href={data.url} target="_blank" className="col-span-1 border border-primary-100 p-5 rounded-2xl hover:bg-primary-50 transition-colors">
+    <Link href={data.url} target="_blank" className="col-span-1 border border-primary-100 dark:border-zinc-800 p-5 rounded-2xl hover:bg-primary-50 dark:hover:bg-zinc-800 transition-colors">
       <div>
         <div className="text-xl font-bold text-neutral-600 dark:text-white">
           {data.title}
