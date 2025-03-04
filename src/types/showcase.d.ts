@@ -6,4 +6,5 @@ type ShowcaseType = {
   image: StaticImageData;
   url: string;
   alt: string;
+  tags: string[];
 };

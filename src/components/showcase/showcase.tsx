@@ -13,6 +13,7 @@ const Showcase: NextPage = ({}) => {
       url: "https://ums-iid.com/",
       image: ShowcaseImageConstants.umsiid,
       title: "UMS International Innovation Day 2024",
+      tags: ["React", "Supabase", "Next.JS"],
     },
     {
       subtitle:
@@ -21,6 +22,7 @@ const Showcase: NextPage = ({}) => {
       url: "https://github.com/Josumaru/raijin",
       image: ShowcaseImageConstants.raijin,
       title: "Raijin",
+      tags: ["React", "Supabase", "Next.JS"],
     },
     {
       subtitle:
@@ -29,6 +31,7 @@ const Showcase: NextPage = ({}) => {
       url: "https://vido.josumaru.my.id/",
       image: ShowcaseImageConstants.vido,
       title: "VIDO - Virtual Doctor",
+      tags: ["React", "Supabase", "Next.JS"],
     },
     {
       subtitle:
@@ -37,6 +40,7 @@ const Showcase: NextPage = ({}) => {
       url: "https://josumaru.my.id",
       image: ShowcaseImageConstants.josumaru,
       title: "Josumaru Portfolio Websites",
+      tags: ["React", "Supabase", "Next.JS"],
     },
     {
       subtitle:
@@ -45,6 +49,7 @@ const Showcase: NextPage = ({}) => {
       url: "https://anugerahpowdercoating.com/",
       image: ShowcaseImageConstants.anugerah,
       title: "Anugerah Coating Powder",
+      tags: ["React", "Supabase", "Next.JS"],
     },
     {
       subtitle:
@@ -53,6 +58,7 @@ const Showcase: NextPage = ({}) => {
       url: "https://fostifest.fostiums.org/",
       image: ShowcaseImageConstants.fostifest,
       title: "Fostifest 2024",
+      tags: ["React", "Supabase", "Next.JS"],
     },
     {
       subtitle:
@@ -61,6 +67,7 @@ const Showcase: NextPage = ({}) => {
       url: "#",
       image: ShowcaseImageConstants.sheesh,
       title: "Sheesh",
+      tags: ["React", "Supabase", "Next.JS"],
     },
     {
       subtitle:
@@ -69,6 +76,7 @@ const Showcase: NextPage = ({}) => {
       url: "#",
       image: ShowcaseImageConstants.fospresence,
       title: "Fospresence",
+      tags: ["React", "Supabase", "Next.JS"],
     },
     {
       subtitle:
@@ -77,6 +85,7 @@ const Showcase: NextPage = ({}) => {
       url: "https://pineleaf.id",
       image: ShowcaseImageConstants.pineleaf,
       title: "Pineleaf",
+      tags: ["React", "Supabase", "Next.JS"],
     },
     {
       subtitle:
@@ -85,14 +94,12 @@ const Showcase: NextPage = ({}) => {
       url: "https://anime.josumaru.my.id/home",
       image: ShowcaseImageConstants.animanga,
       title: "Animanga",
+      tags: ["React", "Supabase", "Next.JS"],
     },
   ];
 
   return (
-    <div
-      id="showcase"
-      className="items-center flex justify-center flex-col"
-    >
+    <div id="showcase" className="items-center flex justify-center flex-col">
       <SectionTitle
         data={{ title: "Hall of Fame", subtile: "Projects I have worked on" }}
       />
