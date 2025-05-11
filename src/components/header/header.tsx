@@ -25,7 +25,7 @@ const Header: NextPage = ({}) => {
           </div>
         </div>
         <div>
-          <p className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-center max-w-[700px]">
+          <p className="text-4xl z-[99] md:text-5xl lg:text-6xl xl:text-7xl font-bold text-center max-w-[700px]">
             <BlurIn text="Alone" /> is Another Word for{" "}
             <BlurIn text="Splendid" />
           </p>
@@ -34,7 +34,7 @@ const Header: NextPage = ({}) => {
           High quality <strong>Software</strong> built using High Quality{" "}
           <strong>Programs</strong>
         </p>
-        <div className="flex md:flex-row gap-2 w-full items-center justify-center my-5 ">
+        <div className="flex flex-col md:flex-row gap-2 w-full items-center justify-center my-5 ">
           <Link
             target="_blank"
             href="https://github.com/Josumaru/"

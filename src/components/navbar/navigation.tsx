@@ -55,7 +55,7 @@ const Navigation: NextPage = ({}) => {
   return (
     <div className="duration-300 transition-transform">
       <div
-        className={`w-full flex flex-col items-center justify-center z-50 duration-300 backdrop-blur-md border-b border-primary-500 border-opacity-20 ${
+        className={`w-full flex flex-col items-center justify-center z-50 duration-300 backdrop-blur-md border-b border-primary-500/10 border-opacity-20 ${
           hideNavbar ? "-translate-y-full" : "translate-y-0"
         }`}
         style={{ position: "fixed" }}
@@ -78,7 +78,7 @@ const Navigation: NextPage = ({}) => {
           />
         </div>
         <nav
-          className={`max-sm:px-3 flex w-full duration-300 transition-transform justify-between top-0 z-50 py-4 container mx-3`}
+          className={`px-3 flex w-full duration-300 transition-transform justify-between top-0 z-50 py-4 container mx-3`}
         >
           <div className="flex gap-5 px-0">
             <LeadingNavigation />
@@ -89,10 +89,10 @@ const Navigation: NextPage = ({}) => {
           <div className="hidden md:block">
             <ActionNavigation />
           </div>
-          <div className="flex items-center justify-center">
+          <div className="flex items-center justify-center md:hidden">
             <Button
               variant={"ghost"}
-              className="hover:text-primary-500 duration-500 md:hidden z-30 flex items-center justify-center px-0"
+              className="hover:text-primary-500 duration-500 z-30 flex items-center justify-center px-0"
             >
               <ThemeChanger />
             </Button>
