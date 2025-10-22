@@ -46,7 +46,7 @@ const Header: NextPage = ({}) => {
         <div className="flex flex-col md:flex-row gap-2 w-full items-center justify-center my-5 ">
           <Link
             target="_blank"
-            href="https://github.com/Josumaru/"
+            href="https://wa.me/62895383211221?text=Halo%20Joko%2C%20saya%20tertarik%20dengan%20layanan%20Anda.%20Bisa%20diskusi%3F"
             className="w-full md:w-auto"
           >
             <Button className="group flex w-full h-12 hover:shadow-xl hover:shadow-primary-500/75  duration-500 items-center justify-center gap-1 border border-primary-500 bg-primary-500 hover:bg-primary-600 rounded-2xl sm:flex-1 md:w-96 text-sm md:text-md font-medium text-white">

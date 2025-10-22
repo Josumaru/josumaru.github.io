@@ -1,4 +1,4 @@
-import Experience from '@/components/experience/Experience';
+import Experience from '@/components/experience/experience';
 import FrequentlyAskQuestion from '@/components/faq/frequently-ask-question';
 import Header from '@/components/header/header';
 import Profile from '@/components/profile/Profile';

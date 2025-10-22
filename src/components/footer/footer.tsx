@@ -28,16 +28,12 @@ const Footer: NextPage = ({}) => {
       title: "Product",
       subtitles: [
         {
-          name: "Animanga - Manga & Anime",
-          url: "https://anime.josumaru.my.id",
-        },
-        {
           name: "Raijin Streaming Apps",
           url: "https://github.com/Josumaru/raijin",
         },
         {
           name: "UMS IID",
-          url: "https://ums-iid.com/",
+          url: "https://ums-iid.vercel.app/",
         },
         {
           name: "Anugerah",
@@ -67,25 +63,29 @@ const Footer: NextPage = ({}) => {
       title: "Domain",
       subtitles: [
         {
-          name: "josumaru.my.id",
-          url: "https://josumaru.my.id",
+          name: "josumaru.vercel.app",
+          url: "https://josumaru.vercel.app",
         },
-        {
-          name: "raijin.josumaru.my.id",
-          url: "https://raijin.josumaru.my.id/api/anime/ongoing/1",
+         {
+          name: "overlogic.io",
+          url: "https://overlogic.io",
         },
-        {
-          name: "vido.josumaru.my.id",
-          url: "https://vido.josumaru.my.id",
-        },
-        {
-          name: "hpc.josumaru.my.id",
-          url: "https://hpc.josumaru.my.id",
-        },
-        {
-          name: "anime.josumaru.my.id",
-          url: "https://anime.josumaru.my.id",
-        },
+        // {
+        //   name: "raijin.josumaru.my.id",
+        //   url: "https://raijin.josumaru.my.id/api/anime/ongoing/1",
+        // },
+        // {
+        //   name: "vido.josumaru.my.id",
+        //   url: "https://vido.josumaru.my.id",
+        // },
+        // {
+        //   name: "hpc.josumaru.my.id",
+        //   url: "https://hpc.josumaru.my.id",
+        // },
+        // {
+        //   name: "anime.josumaru.my.id",
+        //   url: "https://anime.josumaru.my.id",
+        // },
       ],
     },
   ];

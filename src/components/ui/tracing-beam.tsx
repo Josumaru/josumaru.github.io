@@ -63,7 +63,7 @@ export const TracingBeam = ({ children, className }: { children: React.ReactNode
           <motion.path
             d={`M 1 0V 0 l 0 0 V ${svgHeight * 0.8} l 0 0V ${svgHeight}`}
             fill='none'
-            stroke='#9091A0'
+            stroke='#f97316'
             strokeOpacity='0.16'
             transition={{
               duration: 10
@@ -88,10 +88,10 @@ export const TracingBeam = ({ children, className }: { children: React.ReactNode
               y1={y1} // set y1 for gradient
               y2={y2} // set y2 for gradient
             >
-              <stop stopColor='#f43f5e' stopOpacity='0'></stop>
-              <stop stopColor='#f43f5e'></stop>
-              <stop offset='0.325' stopColor='#fda4af'></stop>
-              <stop offset='1' stopColor='#fda4af' stopOpacity='0'></stop>
+              <stop stopColor='#f97316' stopOpacity='0'></stop>
+              <stop stopColor='#f97316'></stop>
+              <stop offset='0.325' stopColor='#f97316'></stop>
+              <stop offset='1' stopColor='#f97316' stopOpacity='0'></stop>
             </motion.linearGradient>
           </defs>
         </svg>

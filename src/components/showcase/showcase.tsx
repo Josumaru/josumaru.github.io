@@ -123,7 +123,7 @@ const Showcase: NextPage = ({}) => {
     },
     {
       subtitle:
-        "Fospresence is a mobile application designed to streamline attendance tracking for participants in FOSTI UMS",
+        "Fospresence is a mobile app designed to streamline attendance tracking for participants in FOSTI UMS",
       alt: "Fospresence",
       url: "#",
       image: ShowcaseImageConstants.fospresence,
