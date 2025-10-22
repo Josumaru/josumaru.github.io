@@ -7,6 +7,16 @@ import {
 } from "@/components/ui/accordion";
 import SectionTitle from "../common/section-title";
 
+const birthDate = new Date(2002, 11);
+const today = new Date();
+
+let age = today.getFullYear() - birthDate.getFullYear();
+const monthDiff = today.getMonth() - birthDate.getMonth();
+
+if (monthDiff < 0 || (monthDiff === 0 && today.getDate() < birthDate.getDate())) {
+  age--;
+}
+
 const questions: { question: string; answer: string }[] = [
   {
     question: "What is your name?",
@@ -15,7 +25,7 @@ const questions: { question: string; answer: string }[] = [
   },
   {
     question: "How old are you?",
-    answer: "I'm 21 years old this year",
+    answer: `I'm ${age} years old this year`,
   },
   {
     question: "Where did you take your college degree?",
