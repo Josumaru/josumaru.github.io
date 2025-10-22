@@ -21,7 +21,7 @@ const GithubActivity: NextPage = ({}) => {
   return (
     <div className="relative w-full h-full max-[380px]:h-[100px] max-[474px]:h-[140px] max-[620px]:h-[150px] max-[764px]:h-[200px]">
       <img
-        src="https://github-readme-activity-graph.vercel.app/graph?username=Josumaru&radius=16&theme=redical&area=true&order=5&hide_border=true&hide_title=true&bg_color=transparent&line=fb7185&point=be123c&color=0d1117"
+        src="https://github-readme-activity-graph.vercel.app/graph?username=Josumaru&radius=16&theme=redical&area=true&order=5&hide_border=true&hide_title=true&bg_color=transparent&line=f97316&point=f97316&color=0d1117"
         height="300"
         alt="activity-graph graph"
         width={300}
@@ -29,13 +29,21 @@ const GithubActivity: NextPage = ({}) => {
         style={{ display: !isDark ? "block" : "none" }}
       />
       <img
-        src="https://github-readme-activity-graph.vercel.app/graph?username=Josumaru&radius=16&theme=redical&area=true&order=5&hide_border=true&hide_title=true&bg_color=transparent&line=fb7185&point=be123c&color=ffffff"
+        src="https://github-readme-activity-graph.vercel.app/graph?username=Josumaru&radius=16&theme=redical&area=true&order=5&hide_border=true&hide_title=true&bg_color=transparent&line=f97316&point=f97316&color=ffffff"
+        height="300"
+        alt="activity-graph graph"
+        width={300}
+        className="grayscale hover:grayscale-0 object-fill duration-500 h-full w-full absolute"
+        style={{ display: isDark ? "block" : "none" }}
+      />
+      {/* <img
+        src="https://github-readme-activity-graph.vercel.app/graph?username=Josumaru&radius=16&theme=redical&area=true&order=5&hide_border=true&hide_title=true&bg_color=transparent&line=f97316&point=f97316&color=ffffff"
         height="300"
         alt="activity-graph graph"
         width={300}
         style={{ display: isDark ? "block" : "none" }}
         className="grayscale hover:grayscale-0 object-cover duration-500 h-full w-full absolute"
-      />
+      /> */}
     </div>
   );
 };

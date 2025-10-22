@@ -8,6 +8,11 @@ import pineleaf from '@/assets/images/showcase/pineleaf.png';
 import sheesh from '@/assets/images/showcase/sheesh.png';
 import fospresence from '@/assets/images/showcase/fospresence.png';
 import animanga from '@/assets/images/showcase/animanga.png';
+import muslimpergi from '@/assets/images/showcase/muslimpergi.png';
+import comina from '@/assets/images/showcase/comina.png';
+import devent from '@/assets/images/showcase/devent.png';
+import restate from '@/assets/images/showcase/restate.png';
+import wise from '@/assets/images/showcase/wise.png';
 
 export const ShowcaseImageConstants = {
   raijin,
@@ -19,5 +24,10 @@ export const ShowcaseImageConstants = {
   sheesh,
   pineleaf,
   fospresence,
-  animanga
+  animanga,
+  muslimpergi,
+  comina,
+  devent,
+  restate,
+  wise,
 };

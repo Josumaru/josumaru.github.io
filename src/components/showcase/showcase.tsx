@@ -8,9 +8,54 @@ const Showcase: NextPage = ({}) => {
   const data: ShowcaseType[] = [
     {
       subtitle:
+        "Muslim Pergi is a platform that provides information about Hajj and Umrah, including packages and registration.",
+      alt: "Muslim Pergi",
+      url: "https://muslimpergi.vercel.app/",
+      image: ShowcaseImageConstants.muslimpergi,
+      title: "Muslim Pergi Haji & Umroh",
+      tags: ["Vue", "Vercel", "Node"],
+    },
+    {
+      subtitle:
+        "Comina is a mobile application built with Kotlin & combines Recycler View with Implicit & Explicit Intent.",
+      alt: "UMS IID",
+      url: "https://github.com/josumaru/comina",
+      image: ShowcaseImageConstants.comina,
+      title: "Comina",
+      tags: ["Android", "Kotlin"],
+    },
+    {
+      subtitle:
+        "Devent is a mobile app that integrate dicoding API & uses Room DB for local storage.",
+      alt: "Devent Mobile App",
+      url: "https://github.com/Josumaru/android-devent",
+      image: ShowcaseImageConstants.devent,
+      title: "Devent - Dicoding Event",
+      tags: ["Kotlin", "Android", "Room DB"],
+    },
+    {
+      subtitle:
+        "This app implement bottom navigation, explicit intent, and parcelable using Kotlin Parcelice",
+      alt: "UMS IID",
+      url: "https://github.com/Josumaru/restate",
+      image: ShowcaseImageConstants.restate,
+      title: "Restate",
+      tags: ["Android", "Kotlin", "Parcelize"],
+    },
+    {
+      subtitle:
+        "Wise is an AI-powered mobile app for quick and accurate skin wound detection.",
+      alt: "Wise",
+      url: "https://github.com/Josumaru/wise",
+      image: ShowcaseImageConstants.wise,
+      title: "Wise",
+      tags: ["React", "Supabase", "Next.JS"],
+    },
+    {
+      subtitle:
         "Innovation competition and exhibition at Universitas Muhammadiyah Surakarta that took place over 5 days.",
       alt: "UMS IID",
-      url: "https://ums-iid.com/",
+      url: "https://ums-iid.vercel.app/",
       image: ShowcaseImageConstants.umsiid,
       title: "UMS International Innovation Day 2024",
       tags: ["React", "Supabase", "Next.JS"],
@@ -22,7 +67,7 @@ const Showcase: NextPage = ({}) => {
       url: "https://github.com/Josumaru/raijin",
       image: ShowcaseImageConstants.raijin,
       title: "Raijin",
-      tags: ["React", "Supabase", "Next.JS"],
+      tags: ["Flutter", "Firebase", "Bloc"],
     },
     {
       subtitle:
@@ -67,7 +112,7 @@ const Showcase: NextPage = ({}) => {
       url: "#",
       image: ShowcaseImageConstants.sheesh,
       title: "Sheesh",
-      tags: ["React", "Supabase", "Next.JS"],
+      tags: ["Flutter", "Dart", "Firebase"],
     },
     {
       subtitle:
@@ -76,7 +121,7 @@ const Showcase: NextPage = ({}) => {
       url: "#",
       image: ShowcaseImageConstants.fospresence,
       title: "Fospresence",
-      tags: ["React", "Supabase", "Next.JS"],
+      tags: ["Flutter", "Firebase", "Bloc"],
     },
     {
       subtitle:
@@ -94,7 +139,7 @@ const Showcase: NextPage = ({}) => {
       url: "https://anime.josumaru.my.id/home",
       image: ShowcaseImageConstants.animanga,
       title: "Animanga",
-      tags: ["React", "Supabase", "Next.JS"],
+      tags: ["React", "Once UI", "Next.JS"],
     },
   ];
 

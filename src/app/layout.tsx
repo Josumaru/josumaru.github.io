@@ -62,7 +62,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <head>
         <meta
           name="google-adsense-account"
@@ -75,9 +75,10 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <ThemeProvider
-          enableSystem={true}
-          defaultTheme="dark"
           attribute="class"
+          defaultTheme="light"
+          enableSystem
+          disableTransitionOnChange
         >
           <Navigation />
           {children}

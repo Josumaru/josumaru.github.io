@@ -5,7 +5,6 @@ import LeadingNavigation from "./leading-navigation";
 import MenuNavigation from "./menu-navigation";
 import ActionNavigation from "./action-navigation";
 import Link from "next/link";
-import Image from "next/image";
 import {
   ArrowUpRightFromSquare,
   LucideSidebarClose,

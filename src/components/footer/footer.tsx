@@ -94,14 +94,16 @@ const Footer: NextPage = ({}) => {
       <div className="container mx-3">
         <div className="flex flex-col md:flex-row justify-between">
           <div className="mb-8 md:mb-0">
-            <Link href="/" className="flex items-center gap-2">
+            <Link target="_blank" href="/" className="flex items-center gap-2">
               <h2 className="text-lg font-bold">JOSUMARU</h2>
             </Link>
 
             <h1 className="dark:text-gray-300 mb-10">
               Build by{" "}
               <span className="text-[#039ee4]">
-                <Link href="https://instagram.com/josurou">@josurou</Link>
+                <Link target="_blank" href="https://instagram.com/josurou">
+                  @josurou
+                </Link>
               </span>
             </h1>
             <div className="flex gap-2 h-10 mt-5">
@@ -132,6 +134,7 @@ const Footer: NextPage = ({}) => {
                   {link.subtitles.map((subtitle, index) => (
                     <li key={index}>
                       <Link
+                        target="_blank"
                         href={subtitle.url}
                         className="text-gray-600 hover:text-black dark:text-gray-400 dark:hover:text-white"
                       >
