@@ -13,7 +13,8 @@ import comina from '@/assets/images/showcase/comina.png';
 import devent from '@/assets/images/showcase/devent.png';
 import restate from '@/assets/images/showcase/restate.png';
 import wise from '@/assets/images/showcase/wise.png';
-
+import overlogic from '@/assets/images/showcase/overlogic.png';
+import metscare from '@/assets/images/showcase/metscare.png';
 export const ShowcaseImageConstants = {
   raijin,
   anugerah,
@@ -30,4 +31,6 @@ export const ShowcaseImageConstants = {
   devent,
   restate,
   wise,
+  overlogic,
+  metscare,
 };

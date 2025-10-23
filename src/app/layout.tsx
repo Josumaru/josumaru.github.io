@@ -7,6 +7,7 @@ import openGraph from "@/assets/opengraph/opengraph.png";
 import { ThemeProvider } from "@/components/common/theme-provider";
 import AdScript from "@/components/ad/ad-script";
 import { Analytics } from "@vercel/analytics/react";
+import { Toaster } from "@/components/ui/sonner";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -82,6 +83,7 @@ export default function RootLayout({
         >
           <Navigation />
           {children}
+          <Toaster />
           <Analytics />
           <Footer />
         </ThemeProvider>

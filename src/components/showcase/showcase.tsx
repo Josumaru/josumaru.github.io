@@ -15,11 +15,28 @@ const Showcase: NextPage = ({}) => {
   const data: ShowcaseType[] = [
     {
       subtitle:
+        "Overlogic Universe was founded with a passion to bring revolutionary changes to the digital world.",
+      alt: "Overlogic - Company Profile",
+      url: "https://overlogic.io/en",
+      image: ShowcaseImageConstants.overlogic,
+      title: "Overlogic - Company Profile",
+      tags: ["React", "Next.JS", "Bun"],
+    },
+    {
+      subtitle: "Metscare provides health records to detect metabolic syndrome",
+      alt: "Metscare",
+      url: "#",
+      image: ShowcaseImageConstants.metscare,
+      title: "Metscare",
+      tags: ["Flutter", "Riverpod", "Express.JS"],
+    },
+    {
+      subtitle:
         "Muslim Pergi is a platform that provides information about Hajj and Umrah, including packages and registration.",
       alt: "Muslim Pergi",
       url: "https://muslimpergi.vercel.app/",
       image: ShowcaseImageConstants.muslimpergi,
-      title: "Muslim Pergi Haji & Umroh",
+      title: "Muslim Pergi Hajj & Umrah",
       tags: ["Vue", "Vercel", "Node"],
     },
     {
@@ -80,7 +97,7 @@ const Showcase: NextPage = ({}) => {
       subtitle:
         "Online health consultation that presents many cute and funny assistants who are ready to answer",
       alt: "Virtual Doctor",
-      url: "https://vido.josumaru.my.id/",
+      url: "https://vido-theta.vercel.app",
       image: ShowcaseImageConstants.vido,
       title: "VIDO - Virtual Doctor",
       tags: ["React", "Supabase", "Next.JS"],
@@ -89,7 +106,7 @@ const Showcase: NextPage = ({}) => {
       subtitle:
         "This is my web portofilio made with the latest technology and integrated",
       alt: "Josumaru Portfolio Websites",
-      url: "https://josumaru.my.id",
+      url: "https://josumaru.vercel.app",
       image: ShowcaseImageConstants.josumaru,
       title: "Josumaru Portfolio Websites",
       tags: ["React", "Supabase", "Next.JS"],
@@ -143,7 +160,7 @@ const Showcase: NextPage = ({}) => {
       subtitle:
         "A platform to explore, watch your favorite anime, and read manga seamlessly in one place.",
       alt: "Animanga",
-      url: "https://anime.josumaru.my.id/home",
+      url: "animanga-anime.vercel.app",
       image: ShowcaseImageConstants.animanga,
       title: "Animanga",
       tags: ["React", "Once UI", "Next.JS"],
@@ -153,7 +170,7 @@ const Showcase: NextPage = ({}) => {
   const handleShowMore = () => {
     setVisibleCount((prev) => Math.min(prev + 6, data.length));
   };
-   const handleShowLess = () => {
+  const handleShowLess = () => {
     setVisibleCount(6);
   };
 
